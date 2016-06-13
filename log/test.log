@@ -1,0 +1,1117 @@
+  [1m[36m (150.7ms)[0m  [1mDROP DATABASE IF EXISTS "rescue_mission_test"[0m
+  [1m[35m (424.1ms)[0m  CREATE DATABASE "rescue_mission_test" ENCODING = 'unicode'
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.2ms)[0m  CREATE TABLE "questions" ("id" serial primary key, "title" character varying NOT NULL, "description" text NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160613165624')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2016-06-13 14:27:34 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (2.5ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 434ms (Views: 429.4ms | ActiveRecord: 3.9ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:33:30 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.8ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 285ms (Views: 281.3ms | ActiveRecord: 2.9ms)
+  [1m[35m (0.8ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Brooklyn biodiesel truffaut ennui vinegar mumblecore loko banh mi narwhal actually paleo waistcoat."], ["description", "Explicabo artisan a. Tacos maxime voluptas tilde officiis xoxo. Totam cornhole cray fugit hic kinfolk porro fixie. Numquam pour-over earum. Ab goth eaque organic park cornhole nesciunt. Narwhal suscipit mlkshk salvia. Fanny pack ad officiis street numquam. Temporibus et qui a."], ["created_at", "2016-06-13 18:33:31.120995"], ["updated_at", "2016-06-13 18:33:31.120995"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:33:31 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.9ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:40:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.4ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 307ms (Views: 304.0ms | ActiveRecord: 2.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:40:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:42:22 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 300ms (Views: 295.5ms | ActiveRecord: 3.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:42:23 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Williamsburg yuccie trust fund meh intelligentsia shabby chic disrupt street single-origin coffee irony."], ["description", "Qui numquam eum. Perferendis incidunt intelligentsia expedita. Alias fingerstache explicabo et inventore ea hammock distinctio. Trust fund flexitarian tempora aut lumbersexual cupiditate rem. Molestiae echo temporibus try-hard raw denim. Tattooed cumque art party modi dicta corrupti kogi. Yolo cum letterpress diy dolorum dolor asymmetrical synth."], ["created_at", "2016-06-13 18:43:09.163714"], ["updated_at", "2016-06-13 18:43:09.163714"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Squid forage loko farm-to-table crucifix celiac venmo fingerstache readymade post-ironic vinegar 3 wolf moon cred cleanse."], ["description", "Error bespoke iphone quia thundercats chartreuse. Esse mlkshk vitae magni distinctio. Small batch et austin deep v incidunt gentrify. Ratione biodiesel lomo vice. Repellendus reprehenderit consequatur. Sed non post-ironic illum."], ["created_at", "2016-06-13 18:43:09.173951"], ["updated_at", "2016-06-13 18:43:09.173951"]]
+  [1m[35m (0.5ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "3 wolf moon food truck slow-carb lumbersexual portland kickstarter hammock tofu yuccie readymade everyday roof deep v gentrify."], ["description", "Perferendis eveniet suscipit xoxo wes anderson. Mumblecore polaroid neutra qui. Magni asperiores thundercats veniam flannel repudiandae dicta. Normcore sed tempora minus. Nostrum chillwave quinoa ut doloremque. Eos cronut iure. Qui pour-over brunch quas cardigan non taxidermy aut."], ["created_at", "2016-06-13 18:43:09.178829"], ["updated_at", "2016-06-13 18:43:09.178829"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:43:09 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 200ms (Views: 198.2ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Art party plaid ennui whatever meggings heirloom franzen fanny pack freegan locavore swag pug trust fund gastropub leggings."], ["description", "Migas sunt consequatur similique. Officiis helvetica ea quisquam saepe pickled quibusdam laborum. Incidunt mixtape architecto. Fanny pack voluptatem venmo godard eius. Cumque vinyl everyday. Incidunt sit poutine voluptatem slow-carb meditation tumblr gluten-free."], ["created_at", "2016-06-13 18:43:09.406172"], ["updated_at", "2016-06-13 18:43:09.406172"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Crucifix roof whatever tote bag humblebrag asymmetrical stumptown blue bottle gluten-free artisan cold-pressed venmo."], ["description", "Lo-fi artisan quinoa celiac viral quod nam. Ut unde necessitatibus chicharrones aut actually tote bag butcher. Ducimus blanditiis biodiesel cray esse. Facilis nemo exercitationem et. Jean shorts quae est. Hella et maiores dicta kinfolk swag you probably haven't heard of them. Consequatur knausgaard perferendis ducimus irony. Franzen officiis aut omnis quae loko."], ["created_at", "2016-06-13 18:43:09.411346"], ["updated_at", "2016-06-13 18:43:09.411346"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Single-origin coffee plaid art party shoreditch lomo tofu 3 wolf moon meggings whatever twee stumptown aesthetic cornhole franzen."], ["description", "90's ut qui sapiente. Biodiesel et wolf fanny pack blog quibusdam magni omnis. Et roof pabst. Cred temporibus dolorum assumenda omnis twee necessitatibus sit. Locavore yuccie voluptate xoxo molestias natus aut helvetica. Asymmetrical quae et mixtape et."], ["created_at", "2016-06-13 18:43:09.413649"], ["updated_at", "2016-06-13 18:43:09.413649"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:43:09 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Leggings chia thundercats flannel austin roof organic yr deep v you probably haven't heard of them whatever flexitarian."], ["description", "Quam carry aut consequuntur earum yuccie brunch. Similique saepe synth kombucha quidem cupiditate paleo. Ramps aliquid trust fund itaque. Sed pop-up lo-fi hashtag squid inventore eum. Bitters master rerum vitae irony et quaerat pinterest. Quas rerum heirloom kinfolk cray. Repellat qui et vel quae. Cum soluta lo-fi est voluptas voluptatem cupiditate authentic."], ["created_at", "2016-06-13 18:43:55.712326"], ["updated_at", "2016-06-13 18:43:55.712326"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Austin echo quinoa listicle flannel jean shorts banh mi paleo vinegar kale chips."], ["description", "Aut marfa quinoa velit. Et deleniti franzen street porro ab corporis non. Fanny pack magnam park cray eos. Minima voluptatem sriracha occaecati. Deleniti ipsum ea expedita ab ex. Magni eaque vero. Veritatis ad voluptatibus id trust fund vitae. Cupiditate nobis laudantium ipsum."], ["created_at", "2016-06-13 18:43:55.719993"], ["updated_at", "2016-06-13 18:43:55.719993"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Hashtag lo-fi banh mi bitters mumblecore mustache you probably haven't heard of them kale chips yolo venmo authentic williamsburg humblebrag fashion axe."], ["description", "Magnam atque artisan dolores ea thundercats dolore. Single-origin coffee normcore truffaut beatae eum. Fap est tacos placeat consequuntur occaecati slow-carb mumblecore. Park bespoke repellendus ut impedit voluptate. Tousled distinctio autem quo. Debitis ennui necessitatibus aperiam ullam."], ["created_at", "2016-06-13 18:43:55.721966"], ["updated_at", "2016-06-13 18:43:55.721966"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:43:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 228ms (Views: 225.6ms | ActiveRecord: 1.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Kitsch hammock iphone green juice kogi put a bird on it fap post-ironic craft beer meditation schlitz occupy synth jean shorts bicycle rights."], ["description", "Corporis squid et pariatur chicharrones. Exercitationem try-hard et non. Animi food truck jean shorts veniam. Swag trust fund voluptas. Mustache non quam lo-fi. Swag delectus dolore celiac nihil ut porro. Nam distillery tenetur."], ["created_at", "2016-06-13 18:43:55.973665"], ["updated_at", "2016-06-13 18:43:55.973665"]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cleanse listicle meditation jean shorts cold-pressed squid banjo selvage yr pickled."], ["description", "Et et post-ironic chillwave nihil leggings. Knausgaard forage farm-to-table retro truffaut repellat whatever. 3 wolf moon sed eaque seitan. Rerum swag 90's incidunt pitchfork fap cronut. 8-bit et echo direct trade assumenda freegan molestiae. Pitchfork lo-fi facilis. Non bushwick ea qui etsy odit est."], ["created_at", "2016-06-13 18:43:55.982441"], ["updated_at", "2016-06-13 18:43:55.982441"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Fingerstache irony carry swag direct trade brooklyn typewriter 3 wolf moon waistcoat kitsch thundercats health."], ["description", "Maxime odit blanditiis delectus cumque in lo-fi. Sunt dolore gluten-free voluptatibus trust fund yr viral ugh. Tote bag iphone offal. 3 wolf moon fap veritatis keytar accusantium amet eum. Meh meggings quinoa kitsch fashion axe ut kombucha atque. Iphone dolorem rerum. Small batch scenester a bespoke. Et vegan eum voluptates direct trade keffiyeh blue bottle brunch."], ["created_at", "2016-06-13 18:43:55.985387"], ["updated_at", "2016-06-13 18:43:55.985387"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:43:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cray hammock etsy irony meditation goth iphone heirloom leggings locavore gastropub kale chips flannel."], ["description", "Mixtape dolores green juice asperiores bitters. Nihil ad hammock ennui dolorem. 3 wolf moon in possimus beard consectetur. Ut quinoa earum kickstarter esse. Sapiente harum similique whatever autem chillwave. Eligendi dolorem rem health pabst ullam accusantium. Small batch aspernatur loko ut godard dolorem quia. Laudantium fingerstache xoxo 8-bit sunt kitsch."], ["created_at", "2016-06-13 18:56:21.947887"], ["updated_at", "2016-06-13 18:56:21.947887"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Messenger bag beard freegan chia food truck pinterest flexitarian ethical whatever tote bag disrupt five dollar toast goth cornhole."], ["description", "Et aut forage. Natus fugit church-key quia raw denim. Alias a distinctio kombucha voluptas skateboard. Natus kitsch molestias impedit franzen tempore. Dolor ramps reprehenderit et suscipit voluptatem enim. Tote bag voluptatum keytar id ducimus eaque sed consequatur. Ut pickled ratione sed farm-to-table quasi officiis voluptatum. Eligendi skateboard voluptas quam 8-bit est cray."], ["created_at", "2016-06-13 18:56:21.953515"], ["updated_at", "2016-06-13 18:56:21.953515"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cray seitan kickstarter raw denim meditation everyday shabby chic authentic waistcoat kale chips shoreditch scenester."], ["description", "Typewriter shoreditch cronut. Eum quia omnis est. Rerum consequatur quaerat brunch sustainable sequi ut. Salvia intelligentsia culpa inventore. Lumbersexual veritatis et voluptates iste. Qui ex molestiae tempore labore gluten-free. Gastropub quis et locavore ut normcore."], ["created_at", "2016-06-13 18:56:21.955600"], ["updated_at", "2016-06-13 18:56:21.955600"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:56:21 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 200ms (Views: 197.8ms | ActiveRecord: 1.9ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Readymade scenester etsy five dollar toast offal 90's fashion axe skateboard umami blog."], ["description", "Doloremque tacos lomo wayfarers paleo. Pour-over shoreditch quia commodi art party mustache. Et shabby chic quia delectus mustache ut. Ut eos 8-bit shabby chic aut. Autem facilis provident itaque blog nostrum. Iphone aliquid maiores consequatur amet. Banjo brunch austin quisquam. Eligendi tempore kombucha mustache etsy cred."], ["created_at", "2016-06-13 18:56:22.185324"], ["updated_at", "2016-06-13 18:56:22.185324"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Wayfarers keffiyeh deep v 3 wolf moon cray mustache pabst hella lomo yr."], ["description", "Sunt aut est. Qui eveniet corporis. Quam aut banjo irony skateboard iure. Repudiandae voluptas totam quaerat. Totam keffiyeh dolor vel williamsburg. Hella sit aspernatur irony aliquam."], ["created_at", "2016-06-13 18:56:22.187545"], ["updated_at", "2016-06-13 18:56:22.187545"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Austin art party seitan cray pickled leggings tilde slow-carb banjo park."], ["description", "Ullam eaque facilis fashion axe. Disrupt viral maiores taxidermy. Praesentium pinterest velit venmo. Assumenda irony omnis nemo. Dolorem quo voluptatem ducimus. Master occaecati small batch et. Sit alias cum laudantium brunch."], ["created_at", "2016-06-13 18:56:22.192015"], ["updated_at", "2016-06-13 18:56:22.192015"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:56:22 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Pabst whatever keffiyeh ramps meggings pug loko selvage authentic synth crucifix cold-pressed taxidermy fingerstache."], ["description", "Unde mustache drinking vel. Ipsam godard 8-bit vhs voluptate. Necessitatibus qui quis non maxime. Crucifix laborum quas et suscipit green juice similique repudiandae. Dolorem sint bushwick. Quis artisan salvia messenger bag. Voluptatem vice bushwick kombucha."], ["created_at", "2016-06-13 18:56:22.231308"], ["updated_at", "2016-06-13 18:56:22.231308"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 14:56:22 -0400
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Direct trade bespoke pour-over leggings cold-pressed shoreditch cliche tousled raw denim iphone."], ["description", "Taxidermy brooklyn skateboard consequatur molestiae quasi eius. Mustache delectus est pickled. Intelligentsia qui laudantium numquam qui twee diy. Everyday perspiciatis kale chips. Selfies dolorum sunt wayfarers. Sartorial umami readymade quo. Bushwick fanny pack veritatis shabby chic perferendis velit quaerat dreamcatcher."], ["created_at", "2016-06-13 18:57:24.689574"], ["updated_at", "2016-06-13 18:57:24.689574"]]
+  [1m[36m (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ugh bushwick pug tofu street sustainable echo kitsch etsy retro blue bottle art party meditation mixtape plaid."], ["description", "Sed quae shabby chic waistcoat accusamus. Corporis intelligentsia pbr&b salvia health aut et retro. Quia necessitatibus qui. Et yr humblebrag omnis iste. Cupiditate diy consequatur chia. Iusto tilde +1 ennui post-ironic voluptatem. Quod flexitarian in pork belly listicle. Nemo nobis blog."], ["created_at", "2016-06-13 18:57:24.701116"], ["updated_at", "2016-06-13 18:57:24.701116"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Kale chips xoxo health waistcoat gluten-free 90's meditation post-ironic irony literally polaroid."], ["description", "Doloremque normcore ipsam molestias ut 3 wolf moon sit voluptatem. Repellat forage sed. Iphone quos totam post-ironic kickstarter mlkshk iusto direct trade. Ethical repellat sed dicta porro voluptates fingerstache quas. Provident maiores bushwick est dicta. Kickstarter consequatur gentrify omnis et non cornhole. Brunch quisquam iste pour-over you probably haven't heard of them small batch. Et nemo direct trade pug aperiam mlkshk."], ["created_at", "2016-06-13 18:57:24.704228"], ["updated_at", "2016-06-13 18:57:24.704228"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:57:24 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (2.6ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 269ms (Views: 265.1ms | ActiveRecord: 2.6ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Leggings pabst post-ironic chicharrones viral loko kinfolk heirloom goth green juice blog readymade hashtag humblebrag organic."], ["description", "Eligendi qui quisquam. Voluptates dignissimos pop-up sed alias enim. Eos in cardigan suscipit selvage bitters raw denim. Saepe craft beer quae rerum labore mlkshk. Commodi aliquam voluptatem iste meggings. Cleanse raw denim dicta. Voluptatem celiac drinking iste expedita sunt. Ducimus consequatur put a bird on it diy mumblecore salvia twee."], ["created_at", "2016-06-13 18:57:25.006142"], ["updated_at", "2016-06-13 18:57:25.006142"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Intelligentsia +1 crucifix pork belly distillery tilde cardigan tacos selfies chia."], ["description", "Knausgaard retro sit messenger bag perspiciatis. Odit perspiciatis direct trade reprehenderit. Goth in facilis yuccie vel. Mlkshk tilde ethical. Distinctio biodiesel dolores. Ut umami blog kinfolk. Marfa nulla sapiente rerum scenester. Velit libero voluptatem enim alias."], ["created_at", "2016-06-13 18:57:25.009720"], ["updated_at", "2016-06-13 18:57:25.009720"]]
+  [1m[35m (0.8ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Occupy meh lumbersexual marfa listicle iphone locavore beard hammock chambray skateboard ethical distillery."], ["description", "8-bit gastropub listicle commodi blanditiis eligendi doloremque. Sint aliquam thundercats perferendis hashtag. Scenester ab dicta debitis qui incidunt asymmetrical. Ut quo kinfolk rerum. Velit voluptatem chicharrones chia. Possimus amet autem recusandae. Godard actually selvage squid rerum alias in typewriter."], ["created_at", "2016-06-13 18:57:25.021110"], ["updated_at", "2016-06-13 18:57:25.021110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:57:25 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+  [1m[36m (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:59:11 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (3.0ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 314ms (Views: 306.8ms | ActiveRecord: 5.5ms)
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Master shabby chic portland vegan chambray williamsburg organic cronut church-key humblebrag."], ["description", "Kale chips quos vegan green juice thundercats quisquam occaecati. Neutra debitis +1 meditation sapiente et nam. Repellendus shabby chic yr. Yuccie in enim non wes anderson eius quis knausgaard. Bicycle rights alias shabby chic hic. Eligendi voluptates sustainable qui."], ["created_at", "2016-06-13 18:59:12.798140"], ["updated_at", "2016-06-13 18:59:12.798140"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 14:59:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Blog aesthetic wayfarers tousled waistcoat salvia beard green juice banh mi hammock quinoa artisan umami."], ["description", "Facilis lo-fi park chicharrones trust fund lomo post-ironic. Fugit ipsam actually maxime salvia. Facere ea sapiente neutra trust fund quo. Neutra totam selvage chicharrones trust fund health dolor consequatur. Iphone keffiyeh ethical keytar. Craft beer intelligentsia butcher pug. Direct trade squid officia skateboard chillwave cum. Ethical tacos cupiditate."], ["created_at", "2016-06-13 18:59:12.849690"], ["updated_at", "2016-06-13 18:59:12.849690"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Quinoa chambray lomo tote bag gentrify pour-over wes anderson vinegar tacos cronut fixie."], ["description", "Paleo dolorem ea. Flannel officiis austin beatae. Fashion axe vinegar et minus scenester. Veniam deep v marfa. Ea adipisci rerum unde kickstarter yolo. Voluptatem et sunt."], ["created_at", "2016-06-13 18:59:12.856541"], ["updated_at", "2016-06-13 18:59:12.856541"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Selvage master bicycle rights drinking mlkshk slow-carb paleo flexitarian umami microdosing."], ["description", "Iusto ipsa xoxo. Seitan sequi pug error fugit aliquam. Dolor heirloom +1 williamsburg sit atque. Nemo beatae unde. Ad next level iste. Repudiandae chillwave aesthetic cardigan et consequatur. Franzen velit mustache nihil kogi polaroid accusantium maxime."], ["created_at", "2016-06-13 18:59:12.862054"], ["updated_at", "2016-06-13 18:59:12.862054"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 14:59:12 -0400
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:00:44 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (2.0ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 272ms (Views: 267.1ms | ActiveRecord: 3.9ms)
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Austin cardigan quinoa bicycle rights truffaut cliche hella try-hard helvetica 8-bit raw denim."], ["description", "Flexitarian shabby chic sed qui bicycle rights vinyl sartorial. Letterpress molestiae velit assumenda fugit hoodie molestias debitis. Locavore photo booth gluten-free cornhole itaque raw denim banh mi intelligentsia. Lo-fi williamsburg deserunt laudantium. Scenester tousled meh officia ethical est. Chambray similique swag deep v totam. Consequuntur iusto repudiandae."], ["created_at", "2016-06-13 19:00:44.996319"], ["updated_at", "2016-06-13 19:00:44.996319"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:00:45 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Drinking hammock tofu pug gastropub pickled carry butcher godard art party dreamcatcher austin typewriter twee."], ["description", "Aut dolor yr forage sed bicycle rights godard pariatur. Godard eaque labore vitae intelligentsia saepe repudiandae. Ut sartorial yuccie occaecati nobis assumenda meditation. Praesentium stumptown diy flannel tempore chillwave asymmetrical sed. Keffiyeh porro goth gluten-free non ad. Pabst dolores ea flexitarian rerum single-origin coffee chartreuse. Ennui quae nobis mlkshk nemo. Ennui occupy non est totam."], ["created_at", "2016-06-13 19:00:45.044225"], ["updated_at", "2016-06-13 19:00:45.044225"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Letterpress chillwave microdosing meggings cleanse direct trade portland roof chambray leggings forage beard ennui."], ["description", "Officia ut ullam vel. Sint deleniti fashion axe ut et consequatur blue bottle. Thundercats voluptatem pinterest et voluptatem. Knausgaard consectetur chicharrones hashtag deleniti banh mi. Eaque earum architecto voluptatem vinyl amet narwhal cupiditate. Single-origin coffee esse velit. Iphone aut nisi artisan voluptate."], ["created_at", "2016-06-13 19:00:45.049489"], ["updated_at", "2016-06-13 19:00:45.049489"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Distillery vegan ugh ennui blue bottle cold-pressed pinterest 8-bit fixie vice meditation."], ["description", "Williamsburg health portland itaque qui. Quis fixie tote bag mlkshk eius accusantium crucifix. Cray libero kickstarter natus viral. Rerum post-ironic umami. Pour-over humblebrag heirloom asperiores ducimus. Non letterpress veniam mixtape ut aut molestiae. Reiciendis lumbersexual quinoa totam tempora aliquam et pbr&b."], ["created_at", "2016-06-13 19:00:45.054120"], ["updated_at", "2016-06-13 19:00:45.054120"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Scenester farm-to-table vegan selvage flannel +1 kogi carry forage knausgaard whatever."], ["description", "Maiores quidem ut. Qui godard qui voluptatem est hammock shabby chic williamsburg. Ennui everyday voluptas. Et voluptatem et. Tofu stumptown minima pbr&b mustache dreamcatcher. Minima beatae nam numquam. Slow-carb accusamus jean shorts atque. Ad consequuntur vel sed quo butcher."], ["created_at", "2016-06-13 19:07:38.940952"], ["updated_at", "2016-06-13 19:07:38.940952"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Health meggings venmo you probably haven't heard of them small batch kale chips organic ethical mixtape plaid iphone tumblr next level shoreditch church-key."], ["description", "Biodiesel voluptatibus quis eum perferendis. Polaroid iste error recusandae aut enim. Ut facilis sint. Carry shoreditch wayfarers non tousled rerum five dollar toast. Marfa nihil cleanse. Chillwave kogi chambray brunch repellat. Perspiciatis in tacos rerum commodi est tilde illo."], ["created_at", "2016-06-13 19:07:38.945996"], ["updated_at", "2016-06-13 19:07:38.945996"]]
+  [1m[35m (0.9ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Heirloom godard wayfarers +1 tote bag drinking chia shoreditch lo-fi readymade humblebrag banjo ugh."], ["description", "Neque dolorum quia eveniet et voluptas park. Qui salvia chia sapiente leggings +1 ut. Five dollar toast delectus loko chartreuse blanditiis bitters nulla ab. Aut natus tacos atque dicta typewriter voluptates. Leggings eos ipsam eum sriracha veritatis hashtag tempore. Et repellendus ut."], ["created_at", "2016-06-13 19:07:38.950897"], ["updated_at", "2016-06-13 19:07:38.950897"]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:07:38 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 237ms (Views: 235.4ms | ActiveRecord: 1.5ms)
+  [1m[36m (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Iphone ramps freegan portland seitan hammock readymade tattooed chartreuse crucifix loko ethical."], ["description", "Et illum alias dolores. Iste cred tempora banjo cronut sint. Dolores sunt aut mustache sunt gastropub freegan. Meditation ut fugit cupiditate neque. In maiores kickstarter excepturi pug tenetur. Keytar kickstarter temporibus selfies repellendus magni officiis. Beatae dolore nulla quod helvetica incidunt."], ["created_at", "2016-06-13 19:07:39.223336"], ["updated_at", "2016-06-13 19:07:39.223336"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Portland yolo everyday you probably haven't heard of them paleo helvetica gentrify master brunch forage organic blog literally kickstarter cliche."], ["description", "Swag pariatur etsy butcher dolorem veniam blue bottle williamsburg. Quinoa perspiciatis dolorem porro iure. Dolor quinoa chambray kinfolk lo-fi tattooed keytar. Sartorial est dolor tempora et nihil iste. Reprehenderit est voluptatem corporis 90's. Et ad assumenda single-origin coffee. Modi animi tilde excepturi humblebrag sapiente. Ennui celiac omnis."], ["created_at", "2016-06-13 19:07:39.226260"], ["updated_at", "2016-06-13 19:07:39.226260"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Chicharrones next level health meditation tousled letterpress quinoa pinterest yuccie messenger bag trust fund vhs wolf echo."], ["description", "Magnam kitsch skateboard. Brunch et shabby chic. Et nisi truffaut skateboard impedit swag inventore et. Alias synth possimus umami aut culpa voluptas. Quo ut vel asymmetrical ipsam cupiditate. Ut church-key fashion axe doloribus. Placeat suscipit nobis non doloribus consequatur id. Tilde et omnis messenger bag umami organic shabby chic."], ["created_at", "2016-06-13 19:07:39.228587"], ["updated_at", "2016-06-13 19:07:39.228587"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:07:39 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:07:39 -0400
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Pop-up small batch tote bag typewriter artisan fingerstache mlkshk ramps schlitz chillwave locavore cronut brooklyn cornhole."], ["description", "Street non harum. Cray pabst carry corporis eligendi. Thundercats facilis provident distinctio. Kickstarter xoxo impedit neque pour-over. Pariatur vinyl banjo stumptown. Totam voluptatem minus dolorem. Ea brunch id. Culpa et aesthetic +1 carry iusto quisquam."], ["created_at", "2016-06-13 19:09:59.422430"], ["updated_at", "2016-06-13 19:09:59.422430"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Forage gastropub tilde truffaut art party echo meggings austin vinegar synth."], ["description", "Nihil tacos cornhole. Tenetur locavore veniam beard rerum poutine. Raw denim atque literally pitchfork actually. Lumbersexual echo readymade perspiciatis marfa flannel banh mi deleniti. Consequatur est corporis voluptatem tenetur forage harum vel. Distinctio pitchfork salvia farm-to-table. Accusantium aesthetic sint voluptas cold-pressed sustainable error delectus."], ["created_at", "2016-06-13 19:09:59.429177"], ["updated_at", "2016-06-13 19:09:59.429177"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Asymmetrical semiotics sustainable vinyl vinegar pickled readymade sriracha chartreuse master +1 fixie."], ["description", "Forage vice incidunt scenester pbr&b. Enim fingerstache raw denim crucifix distillery accusantium. Temporibus sustainable actually. Eligendi knausgaard est small batch. Aspernatur meh eum franzen listicle portland. Est dolores kitsch nobis godard. Voluptatem voluptatem omnis before they sold out perferendis deleniti. Rerum quaerat rem aperiam quod molestiae kogi."], ["created_at", "2016-06-13 19:09:59.431277"], ["updated_at", "2016-06-13 19:09:59.431277"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:09:59 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 192ms (Views: 190.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Vinyl asymmetrical iphone ennui waistcoat street swag fanny pack meggings bushwick single-origin coffee yolo gluten-free."], ["description", "Labore consequuntur sriracha aliquid eligendi quia austin libero. Fingerstache alias nihil. Sit temporibus sint keytar ut. Sint totam nisi paleo facere sequi. Qui necessitatibus kickstarter deleniti est. Non necessitatibus next level. Neutra nesciunt qui celiac."], ["created_at", "2016-06-13 19:09:59.647120"], ["updated_at", "2016-06-13 19:09:59.647120"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cleanse single-origin coffee bitters knausgaard thundercats disrupt drinking marfa lomo pop-up 8-bit vinegar fingerstache."], ["description", "Pitchfork poutine quo. Quas pickled wes anderson franzen hic. Veniam est repudiandae debitis eveniet ugh. Cronut mustache single-origin coffee. Maiores aesthetic sriracha qui literally quisquam est. Bushwick lomo polaroid. Quaerat error ratione. Qui godard letterpress."], ["created_at", "2016-06-13 19:09:59.650002"], ["updated_at", "2016-06-13 19:09:59.650002"]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Offal crucifix seitan bicycle rights wolf small batch swag deep v gluten-free viral meggings single-origin coffee selfies."], ["description", "Bushwick asperiores labore distillery. Ut readymade labore fugiat listicle mlkshk. Iure et adipisci. Praesentium inventore ipsum raw denim fingerstache. Williamsburg wayfarers farm-to-table rem qui celiac dicta. Consequatur flannel rerum nisi chambray. Pickled franzen next level hella cardigan. Autem quinoa williamsburg cupiditate esse molestias repellat."], ["created_at", "2016-06-13 19:09:59.655960"], ["updated_at", "2016-06-13 19:09:59.655960"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:09:59 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:09:59 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"q1"}
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 12ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "+1 wayfarers cold-pressed wes anderson freegan leggings carry disrupt austin loko sriracha offal fanny pack knausgaard."], ["description", "Aspernatur paleo quia. Plaid sed est alias qui nulla health. Commodi fixie quia forage. Accusamus stumptown pour-over nulla. Pop-up atque drinking etsy try-hard. Qui quinoa quidem iphone repellendus asymmetrical consequatur."], ["created_at", "2016-06-13 19:10:36.191796"], ["updated_at", "2016-06-13 19:10:36.191796"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Swag mlkshk pop-up asymmetrical butcher venmo chambray +1 pickled blue bottle shabby chic single-origin coffee."], ["description", "Quas qui locavore. Itaque selfies quis. Consequatur rerum roof sint literally et lo-fi eos. Small batch aperiam voluptatem sunt rerum portland molestiae mustache. Cupiditate magni qui ea similique sartorial aut consequatur. Aut nihil vinegar. Odit banjo aliquam tacos voluptas swag godard. Cumque nemo crucifix quisquam kinfolk provident consequatur cleanse."], ["created_at", "2016-06-13 19:10:36.196949"], ["updated_at", "2016-06-13 19:10:36.196949"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Put a bird on it literally kogi small batch photo booth fashion axe salvia pug before they sold out bushwick marfa roof."], ["description", "Optio quis humblebrag qui. Slow-carb qui park kombucha truffaut. Paleo quia unde sriracha itaque cleanse aut tumblr. Quisquam chicharrones veniam exercitationem in et et. Hashtag porro suscipit dolores brooklyn xoxo harum. Schlitz commodi labore. Cornhole sunt hic inventore semiotics pop-up numquam. Church-key sit ethical shabby chic quas et."], ["created_at", "2016-06-13 19:10:36.201957"], ["updated_at", "2016-06-13 19:10:36.201957"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:10:36 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 181ms (Views: 179.2ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cornhole flexitarian mustache post-ironic leggings schlitz fashion axe whatever chartreuse crucifix yr actually next level."], ["description", "Ab cupiditate twee eos brunch ipsam expedita narwhal. Fingerstache molestias possimus. Swag hella similique itaque sit libero sed. Polaroid commodi vel. Et banjo quae. Velit meggings possimus repudiandae totam eos vel labore. Seitan tilde ramps sit quia ea microdosing."], ["created_at", "2016-06-13 19:10:36.408450"], ["updated_at", "2016-06-13 19:10:36.408450"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Marfa helvetica yuccie before they sold out echo narwhal banjo deep v raw denim celiac cornhole."], ["description", "Wes anderson meditation quo. Odit ipsa shabby chic banjo velit quo. Stumptown ipsa deleniti master necessitatibus nobis. Aliquam et dolores eos ea. Kinfolk tenetur brunch actually single-origin coffee wes anderson praesentium. Quas 3 wolf moon officia fingerstache necessitatibus. Williamsburg dolorem meh soluta retro. Est franzen numquam tofu id."], ["created_at", "2016-06-13 19:10:36.410889"], ["updated_at", "2016-06-13 19:10:36.410889"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Art party squid pork belly chartreuse organic messenger bag drinking helvetica fap franzen shabby chic."], ["description", "Umami master voluptas goth quae you probably haven't heard of them. Suscipit aut animi non blog pitchfork. Wolf pickled qui wes anderson. Polaroid quos cum wes anderson. Et et art party fugit non. Shabby chic mustache cleanse narwhal ethical voluptatem godard. In dolor franzen consequatur vice dolorum porro iure."], ["created_at", "2016-06-13 19:10:36.412998"], ["updated_at", "2016-06-13 19:10:36.412998"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:10:36 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Flannel thundercats cleanse slow-carb williamsburg deep v ennui cornhole venmo fixie."], ["description", "Enim omnis dolor polaroid consequatur ex actually. Swag iusto hammock ipsa aliquam. Marfa qui franzen et at iphone kogi voluptates. Readymade cleanse rerum mustache ipsum. Voluptatum id voluptatem nulla sapiente vhs fashion axe. Sint non truffaut twee magnam et. Ea ut messenger bag cred omnis. Mlkshk jean shorts adipisci."], ["created_at", "2016-06-13 19:11:03.615020"], ["updated_at", "2016-06-13 19:11:03.615020"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Humblebrag yr food truck goth lo-fi tilde flexitarian quinoa kombucha vegan sriracha skateboard."], ["description", "Optio quisquam dolorum ramps. Temporibus quidem voluptatum natus carry ea. Plaid porro blanditiis. Cum master farm-to-table raw denim facilis. Quibusdam raw denim five dollar toast accusantium. Omnis humblebrag squid chicharrones velit est aspernatur aut. Nostrum hic food truck 90's master aut. Ab vice in repudiandae banjo kogi dolorum."], ["created_at", "2016-06-13 19:11:03.620170"], ["updated_at", "2016-06-13 19:11:03.620170"]]
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Viral sustainable put a bird on it banh mi whatever beard swag etsy irony leggings fingerstache."], ["description", "Nulla neutra taxidermy tacos. Laborum qui jean shorts. Microdosing park meh. Gastropub consequatur quia molestiae umami vero inventore. Nesciunt qui selfies locavore distinctio xoxo. Architecto cardigan in franzen."], ["created_at", "2016-06-13 19:11:03.626132"], ["updated_at", "2016-06-13 19:11:03.626132"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:11:03 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (2.0ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 205ms (Views: 203.1ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Pbr&b blog hashtag synth seitan organic offal kickstarter ramps thundercats wolf aesthetic everyday poutine taxidermy."], ["description", "Quibusdam magnam neque ut tempora dicta roof sint. Et cornhole asperiores. Sint praesentium hic ipsum kinfolk enim scenester. Ethical jean shorts viral nobis quas. Asymmetrical mlkshk aut typewriter at umami nihil. Quaerat shabby chic echo. Quaerat nihil et aut optio sustainable. Unde direct trade doloribus."], ["created_at", "2016-06-13 19:11:03.858368"], ["updated_at", "2016-06-13 19:11:03.858368"]]
+  [1m[36m (0.8ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Bitters drinking quinoa retro chicharrones echo pbr&b health whatever pabst gluten-free."], ["description", "Master sequi incidunt minima illum tofu nisi freegan. Distinctio leggings ut nostrum sint rerum. Ramps vel consequatur est voluptate kinfolk eum diy. Chartreuse non irony debitis aut. Marfa sequi est synth bicycle rights. Sit expedita laborum aliquid."], ["created_at", "2016-06-13 19:11:03.863351"], ["updated_at", "2016-06-13 19:11:03.863351"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Kinfolk blog ethical williamsburg art party tumblr microdosing post-ironic hashtag +1."], ["description", "Biodiesel fugit hammock dolorum perferendis voluptatem vel voluptate. Libero fuga eum kitsch aut loko facere. Cumque corrupti butcher messenger bag sequi organic cold-pressed. Eius loko chicharrones corrupti qui qui. Cred temporibus nihil. Chia kombucha sint quaerat aut."], ["created_at", "2016-06-13 19:11:03.865691"], ["updated_at", "2016-06-13 19:11:03.865691"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:11:03 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Meggings yolo mustache readymade single-origin coffee craft beer tousled wolf food truck retro."], ["description", "Odio alias polaroid eligendi seitan nemo. Blanditiis maxime synth brunch aut vinegar sit craft beer. Cum fanny pack blue bottle doloribus echo. Autem freegan et selvage debitis venmo expedita ut. Distillery error eum. Dolor voluptatem squid whatever rerum ut. Excepturi sustainable magnam."], ["created_at", "2016-06-13 19:11:50.575787"], ["updated_at", "2016-06-13 19:11:50.575787"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Narwhal trust fund listicle sartorial aesthetic wayfarers skateboard chartreuse +1 chicharrones wes anderson yr food truck tilde 90's."], ["description", "Nihil rem church-key occaecati placeat. Veniam humblebrag kickstarter craft beer ab readymade. Tenetur ut nobis minus asymmetrical nemo listicle raw denim. 3 wolf moon amet cronut mustache. Aut voluptatem slow-carb qui try-hard ad qui pinterest. Repudiandae delectus debitis. Accusamus ipsam provident mustache voluptas post-ironic bicycle rights sriracha. Nemo inventore celiac before they sold out qui fashion axe shoreditch commodi."], ["created_at", "2016-06-13 19:11:50.581329"], ["updated_at", "2016-06-13 19:11:50.581329"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Mlkshk locavore listicle fanny pack vhs pork belly sriracha pug cornhole poutine kogi salvia."], ["description", "Voluptas godard minus nam dolorum quo twee aperiam. Perferendis praesentium knausgaard farm-to-table animi. Goth banjo aesthetic nostrum voluptatem typewriter vero. Wayfarers dolor ut earum squid. Poutine yolo tenetur quos. Jean shorts voluptatum taxidermy pour-over quia voluptas kogi iste. Velit +1 repellendus necessitatibus."], ["created_at", "2016-06-13 19:11:50.583404"], ["updated_at", "2016-06-13 19:11:50.583404"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:11:50 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 155ms (Views: 153.2ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Pickled etsy meditation shabby chic tumblr 8-bit letterpress leggings asymmetrical kombucha."], ["description", "Stumptown cliche farm-to-table ut. Quibusdam voluptatem cray omnis before they sold out skateboard. Franzen autem intelligentsia. Try-hard doloribus consectetur hic biodiesel photo booth. Molestiae vitae gastropub austin temporibus. Ratione taxidermy a delectus. Tempora reiciendis voluptas sunt soluta qui."], ["created_at", "2016-06-13 19:11:50.757537"], ["updated_at", "2016-06-13 19:11:50.757537"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Blue bottle twee bicycle rights hella vegan church-key fingerstache narwhal truffaut dreamcatcher deep v gluten-free organic banjo hammock."], ["description", "Accusantium ipsum kickstarter. Molestiae paleo quibusdam architecto pinterest narwhal. Deserunt ducimus pariatur. Quod atque kickstarter beard. Consequatur veniam franzen ullam mumblecore quia vice banjo. Direct trade vhs nobis qui brooklyn quia. Cronut doloremque tousled. Stumptown quibusdam eos."], ["created_at", "2016-06-13 19:11:50.760451"], ["updated_at", "2016-06-13 19:11:50.760451"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Gastropub try-hard fingerstache farm-to-table tattooed xoxo chartreuse truffaut poutine wolf next level goth wayfarers typewriter."], ["description", "Praesentium culpa cornhole put a bird on it pitchfork nihil et roof. Voluptatem freegan et sit hoodie. Animi et polaroid adipisci lomo quo blog. Similique disrupt paleo leggings. Carry doloribus kitsch next level optio repellat dolorem. Literally nobis repellendus distillery quas voluptas franzen."], ["created_at", "2016-06-13 19:11:50.763050"], ["updated_at", "2016-06-13 19:11:50.763050"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:11:50 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Fashion axe wes anderson flannel before they sold out flexitarian neutra leggings aesthetic kinfolk master."], ["description", "Meggings 90's doloremque vinyl necessitatibus molestias vitae. Mollitia disrupt quos accusamus. Modi et dolores deserunt. Selvage ethical eum. Culpa inventore sed ramps butcher flexitarian mollitia id. Chicharrones dolorem kogi williamsburg et tofu voluptatem. Twee quis est vel. Doloribus park shoreditch."], ["created_at", "2016-06-13 19:13:28.433614"], ["updated_at", "2016-06-13 19:13:28.433614"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Gluten-free artisan pabst chartreuse umami deep v shoreditch cardigan normcore waistcoat disrupt leggings."], ["description", "Incidunt banjo flexitarian. Tenetur qui roof. Synth perferendis esse pabst austin hoodie helvetica. Aliquid soluta yuccie et kogi. Non voluptates omnis tilde. Whatever goth non. +1 dignissimos health. Pork belly quia skateboard ex farm-to-table."], ["created_at", "2016-06-13 19:13:28.438594"], ["updated_at", "2016-06-13 19:13:28.438594"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Truffaut tilde migas everyday twee salvia trust fund mumblecore diy direct trade selfies hoodie roof post-ironic."], ["description", "Pbr&b sartorial 3 wolf moon. Vitae marfa voluptas art party maxime et ipsam. Ipsum umami readymade. Aut banjo viral et pickled post-ironic vice. Unde 3 wolf moon id commodi green juice voluptatem helvetica. Nobis artisan aut hella."], ["created_at", "2016-06-13 19:13:28.440822"], ["updated_at", "2016-06-13 19:13:28.440822"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:13:28 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 198ms (Views: 196.3ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Waistcoat sriracha messenger bag meditation flannel organic fixie cardigan kale chips biodiesel fashion axe."], ["description", "Fap flannel molestiae nostrum recusandae velit et quia. Retro church-key repellendus cardigan cumque leggings animi eveniet. Esse austin rerum debitis sint synth. Drinking chillwave et knausgaard nulla. Sequi truffaut pickled repudiandae. Et et pop-up qui meggings deserunt. Quasi vinyl fashion axe."], ["created_at", "2016-06-13 19:13:28.666031"], ["updated_at", "2016-06-13 19:13:28.666031"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "90's williamsburg yuccie chicharrones viral fap biodiesel waistcoat you probably haven't heard of them shoreditch everyday."], ["description", "Illum incidunt master. Labore pour-over tenetur leggings quia. Selfies ea fuga aliquid freegan whatever. Ut porro dolore aut brooklyn neque. Fap fuga totam drinking vinegar. Hella yr trust fund est quisquam quis paleo. Franzen non five dollar toast molestias deleniti cliche nihil aut. Qui odit pug whatever gastropub."], ["created_at", "2016-06-13 19:13:28.669680"], ["updated_at", "2016-06-13 19:13:28.669680"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Disrupt heirloom diy everyday swag quinoa marfa iphone literally post-ironic fashion axe you probably haven't heard of them letterpress."], ["description", "Tempora vice blanditiis. Magnam yr asymmetrical authentic you probably haven't heard of them dolores. Sed knausgaard qui. Consequatur kitsch dolor veniam dolorum. Cornhole non portland. Tilde nesciunt humblebrag consequuntur ullam dignissimos. Ad possimus placeat seitan crucifix."], ["created_at", "2016-06-13 19:13:28.671983"], ["updated_at", "2016-06-13 19:13:28.671983"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:13:28 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (3.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 3.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:13:28 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"q1"}
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 10ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Goth beard aesthetic wes anderson seitan kickstarter polaroid cleanse flannel swag fap hoodie pitchfork carry synth."], ["description", "Ea chicharrones dolorem pariatur. Nemo tacos delectus neutra voluptatem pitchfork fixie. Yr pop-up ipsam direct trade leggings tempore saepe. Sunt est adipisci. Umami in venmo pabst aut distillery. Atque rerum mustache quo 8-bit at. Non disrupt natus sint quis ethical bespoke. At et quam."], ["created_at", "2016-06-13 19:14:08.058838"], ["updated_at", "2016-06-13 19:14:08.058838"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Banh mi wolf yr neutra pbr&b pabst raw denim lumbersexual yolo kombucha venmo mixtape."], ["description", "Banjo bitters pabst cray odio. Unde exercitationem consequatur plaid ramps est offal. 90's ea maxime qui bespoke shoreditch. Jean shorts tousled alias deserunt dolor quibusdam sed viral. Beatae ullam pickled rerum qui. Irony velit amet dolores locavore nisi cardigan et."], ["created_at", "2016-06-13 19:14:08.067853"], ["updated_at", "2016-06-13 19:14:08.067853"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Messenger bag venmo portland tote bag chambray slow-carb organic swag banh mi chartreuse marfa hella butcher forage chicharrones."], ["description", "Voluptas taxidermy et labore. Chicharrones dolore non fingerstache flexitarian banjo. Direct trade doloribus quaerat. Kombucha magnam explicabo 90's plaid. Drinking tenetur voluptas ad temporibus iusto labore. Banh mi mumblecore ipsam cray praesentium pug. Quam tofu bitters diy ducimus quia five dollar toast. 3 wolf moon necessitatibus diy et velit echo normcore."], ["created_at", "2016-06-13 19:14:08.070034"], ["updated_at", "2016-06-13 19:14:08.070034"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:14:08 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 184ms (Views: 182.6ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sustainable wes anderson pabst butcher roof intelligentsia goth ethical chambray skateboard wolf sartorial yolo."], ["description", "Street ex goth post-ironic sit kickstarter. Amet crucifix readymade umami incidunt. Occupy occaecati dolor est ea. Nobis voluptatem harum tote bag dolor. Id gastropub direct trade. Rerum vinyl scenester natus debitis fugit. Authentic bespoke pbr&b esse."], ["created_at", "2016-06-13 19:14:08.279808"], ["updated_at", "2016-06-13 19:14:08.279808"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Sartorial gluten-free deep v actually chillwave locavore etsy gentrify celiac beard paleo."], ["description", "Deep v quia yuccie cum wolf stumptown bespoke. Fugiat nulla butcher sit praesentium gluten-free pop-up. Sit banh mi migas repellendus rerum tofu nulla. Direct trade tacos veniam knausgaard eaque debitis. Doloribus narwhal deep v repellat velit ut. Brooklyn nihil trust fund vice quae provident molestiae street. Illum hic yuccie rerum cum cupiditate. Totam aut vero bespoke amet mustache tempore."], ["created_at", "2016-06-13 19:14:08.284016"], ["updated_at", "2016-06-13 19:14:08.284016"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Whatever kale chips cardigan polaroid mumblecore jean shorts bespoke thundercats ethical artisan distillery bushwick biodiesel."], ["description", "Banjo keffiyeh expedita eos aliquid. Dignissimos qui suscipit sed atque est yr poutine. Cornhole voluptatem franzen. Gluten-free dolor occaecati culpa incidunt cupiditate. Hashtag cupiditate portland neque. Brooklyn fixie minus. Facilis tempore austin literally photo booth blog voluptas. Cleanse aspernatur recusandae illo meditation."], ["created_at", "2016-06-13 19:14:08.286494"], ["updated_at", "2016-06-13 19:14:08.286494"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:14:08 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:14:08 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"q1"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Listicle kombucha xoxo butcher lo-fi church-key deep v quinoa wayfarers green juice artisan mlkshk."], ["description", "Accusamus iste nostrum mumblecore sed cumque modi loko. Delectus voluptatem kogi. Incidunt necessitatibus selvage provident et illum. Beard umami vice non tacos distinctio rerum gastropub. Hella explicabo eligendi est. Consequatur single-origin coffee velit. Drinking numquam et voluptas. Tofu dolor error sed."], ["created_at", "2016-06-13 19:14:39.083468"], ["updated_at", "2016-06-13 19:14:39.083468"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tumblr bespoke brooklyn taxidermy polaroid freegan echo pabst pour-over next level gluten-free pug cray heirloom five dollar toast."], ["description", "Green juice brunch totam. Beard quae polaroid vel unde qui blue bottle laudantium. Blog +1 chambray yolo ad wes anderson rerum. Retro cred ut odio venmo aut austin. Shabby chic drinking pabst. Biodiesel autem flannel literally slow-carb et quia normcore. Salvia knausgaard autem velit quia mlkshk."], ["created_at", "2016-06-13 19:14:39.091040"], ["updated_at", "2016-06-13 19:14:39.091040"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Green juice fanny pack authentic quinoa next level banh mi vhs bicycle rights messenger bag celiac letterpress fashion axe."], ["description", "Vice impedit cronut keffiyeh. Cupiditate kale chips praesentium eum id brunch. Voluptatum intelligentsia flexitarian odio squid everyday. Quam slow-carb authentic 3 wolf moon autem kinfolk deleniti biodiesel. Doloribus plaid fingerstache neque. Odit wayfarers et brooklyn et. Fuga messenger bag eveniet ut carry quia tempora."], ["created_at", "2016-06-13 19:14:39.094317"], ["updated_at", "2016-06-13 19:14:39.094317"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:14:39 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 199ms (Views: 197.6ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Swag fanny pack gluten-free cold-pressed carry distillery yolo deep v etsy disrupt chicharrones forage bushwick."], ["description", "Loko chambray et vel. Numquam tote bag est biodiesel green juice. Kale chips temporibus dolorem goth delectus. Fixie whatever fingerstache pabst literally est. Put a bird on it nisi eum. Quaerat perferendis authentic facilis dreamcatcher nam. Meditation laborum offal authentic est quo narwhal."], ["created_at", "2016-06-13 19:14:39.317468"], ["updated_at", "2016-06-13 19:14:39.317468"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Blue bottle lumbersexual tattooed deep v celiac wayfarers migas banh mi locavore hoodie kitsch."], ["description", "Iphone tumblr consequatur id put a bird on it rem et cred. Iusto et ut. Ut echo vinyl. Lomo truffaut neque actually. Ut dolore meditation goth quibusdam. Vegan ullam vice rem lumbersexual voluptas literally lo-fi. Exercitationem illo sit bicycle rights. Slow-carb tilde cumque leggings waistcoat pinterest post-ironic roof."], ["created_at", "2016-06-13 19:14:39.319749"], ["updated_at", "2016-06-13 19:14:39.319749"]]
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Kitsch listicle master normcore waistcoat loko kogi sartorial xoxo goth drinking celiac."], ["description", "Try-hard aut aut asperiores 3 wolf moon shabby chic deleniti. Aut omnis impedit helvetica freegan. Expedita et vero ennui perspiciatis. Fugit suscipit semiotics. Keytar knausgaard rerum tilde est quam recusandae. Cred chambray laboriosam tote bag distillery. Similique odio ut keytar sapiente."], ["created_at", "2016-06-13 19:14:39.325589"], ["updated_at", "2016-06-13 19:14:39.325589"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:14:39 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Forage venmo hashtag offal synth godard locavore microdosing gluten-free meggings lomo umami ennui keffiyeh kinfolk."], ["description", "Chia semiotics laboriosam dolores soluta maxime cronut farm-to-table. Narwhal keytar tousled bitters molestiae at. Before they sold out neutra omnis. Placeat occupy quos. Beard bespoke et cronut swag in. Nulla voluptas carry pork belly hammock wes anderson ramps."], ["created_at", "2016-06-13 19:15:45.532241"], ["updated_at", "2016-06-13 19:15:45.532241"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Banjo carry migas cardigan helvetica letterpress ethical everyday sustainable you probably haven't heard of them."], ["description", "Narwhal cray sequi sint reiciendis. Sustainable rerum et sint. Carry taxidermy neque voluptas lo-fi quisquam yolo umami. Praesentium necessitatibus adipisci ratione at quas health. +1 sapiente single-origin coffee labore esse pop-up next level cardigan. Narwhal ipsum before they sold out everyday voluptatum reprehenderit irony. Voluptatem mlkshk thundercats minima. Quo waistcoat id church-key."], ["created_at", "2016-06-13 19:15:45.538083"], ["updated_at", "2016-06-13 19:15:45.538083"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Echo art party health roof gluten-free mumblecore salvia green juice artisan ramps offal hammock semiotics."], ["description", "Reiciendis qui magni. Seitan quisquam eos selfies letterpress iste fashion axe. Dolores sed paleo nostrum et. Flexitarian molestiae praesentium. Est cleanse chartreuse facere lo-fi eum. Kombucha hoodie 90's. Sint hoodie butcher vice quam."], ["created_at", "2016-06-13 19:15:45.540173"], ["updated_at", "2016-06-13 19:15:45.540173"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:15:45 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 198ms (Views: 196.6ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Everyday bicycle rights cold-pressed freegan fixie whatever celiac art party poutine vinegar trust fund vice 3 wolf moon salvia."], ["description", "Roof nulla sit asymmetrical. Flannel hella veniam wolf. Irony est poutine quod fixie ut. Voluptas dolor mixtape lumbersexual yr dolore. Ea fashion axe quo mollitia. Messenger bag dolor flannel velit eos nobis. Doloribus voluptates incidunt earum retro dolores et."], ["created_at", "2016-06-13 19:15:45.762884"], ["updated_at", "2016-06-13 19:15:45.762884"]]
+  [1m[36m (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Viral blog shoreditch beard mumblecore selfies kombucha vegan small batch scenester fixie wes anderson."], ["description", "A truffaut et consequatur vel. Kombucha ut microdosing crucifix kickstarter. Veniam dolore occupy est sequi consequatur. Eum aesthetic normcore pbr&b ut occupy nemo quaerat. Omnis health cred id esse. Et banjo amet laborum sustainable."], ["created_at", "2016-06-13 19:15:45.768028"], ["updated_at", "2016-06-13 19:15:45.768028"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Trust fund thundercats chartreuse stumptown meggings ugh fixie direct trade 3 wolf moon meditation austin franzen jean shorts literally health."], ["description", "Vegan put a bird on it itaque hammock facere kitsch et. Occaecati dolorem lumbersexual accusantium. Vegan dicta iphone. Shabby chic migas eveniet wayfarers amet. Sint aut voluptatem voluptates. Et adipisci loko reiciendis sed distillery. Voluptatibus brooklyn microdosing ullam dolore. At vhs dolores wayfarers magni nostrum eius."], ["created_at", "2016-06-13 19:15:45.770598"], ["updated_at", "2016-06-13 19:15:45.770598"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:15:45 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:17:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"q1"}
+  [1m[36mQuestion Load (0.9ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 11ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Viral pbr&b occupy blog park venmo cold-pressed mustache heirloom goth retro vhs cronut dreamcatcher."], ["description", "Dolores consequatur waistcoat provident ab laboriosam. Organic shoreditch omnis pork belly vel non. Irony dicta etsy delectus pitchfork. Sustainable maiores whatever aliquam hoodie nam shoreditch. Put a bird on it celiac chicharrones goth et rerum. Laudantium sit irony repudiandae tempora."], ["created_at", "2016-06-13 19:17:21.762811"], ["updated_at", "2016-06-13 19:17:21.762811"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Chicharrones cornhole meggings semiotics 90's trust fund sriracha gentrify pop-up shabby chic irony vhs cred."], ["description", "Blue bottle kale chips earum facere molestias. Blog cardigan qui illum hashtag reiciendis quae. Cleanse typewriter skateboard. Et similique hic food truck iphone leggings. Health hella fuga paleo tacos consectetur eum. Omnis put a bird on it a health small batch."], ["created_at", "2016-06-13 19:17:21.769097"], ["updated_at", "2016-06-13 19:17:21.769097"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Offal celiac gastropub butcher blog gluten-free pour-over pinterest pitchfork wes anderson."], ["description", "Aut meditation ea meggings lomo quia yuccie maiores. Cray rerum odit chillwave cred fap. Bushwick et godard art party non dolorum a veniam. Sit quia gentrify. Corrupti nam dolor. Fashion axe gentrify delectus odio accusantium whatever tumblr post-ironic."], ["created_at", "2016-06-13 19:17:21.771349"], ["updated_at", "2016-06-13 19:17:21.771349"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:17:21 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 198ms (Views: 196.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Salvia blog neutra ramps kinfolk wes anderson mixtape aesthetic craft beer echo freegan readymade fanny pack."], ["description", "Microdosing hashtag meggings. Laborum et quaerat flexitarian. Leggings microdosing poutine doloremque. Offal iphone doloremque distinctio post-ironic humblebrag meditation echo. Quis pickled repudiandae adipisci gluten-free. Reiciendis inventore vegan. Quinoa heirloom tattooed vice direct trade tempora."], ["created_at", "2016-06-13 19:17:21.991931"], ["updated_at", "2016-06-13 19:17:21.991931"]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Pinterest single-origin coffee gentrify letterpress put a bird on it vhs pug meditation brooklyn celiac vinyl."], ["description", "Mixtape repudiandae stumptown quod voluptatem. Small batch raw denim quo hashtag. Pariatur rerum portland loko kitsch. Sunt kale chips perferendis vel. Cardigan readymade non laborum biodiesel exercitationem voluptatem umami. Swag nulla helvetica. You probably haven't heard of them banh mi quia corporis consectetur odio magnam cleanse. Aut everyday post-ironic dolore heirloom aut et."], ["created_at", "2016-06-13 19:17:21.998135"], ["updated_at", "2016-06-13 19:17:21.998135"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Shoreditch photo booth sartorial blog street yr kogi cold-pressed pinterest cleanse actually viral."], ["description", "Nostrum et cronut hoodie. Et atque quidem taxidermy kickstarter. Suscipit artisan you probably haven't heard of them in venmo chicharrones illum mustache. Autem excepturi earum banjo cum inventore. At readymade williamsburg repudiandae sunt perspiciatis veritatis. Sit pariatur flannel tofu asperiores try-hard expedita."], ["created_at", "2016-06-13 19:17:22.001224"], ["updated_at", "2016-06-13 19:17:22.001224"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:17:22 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Bespoke chambray asymmetrical kitsch fixie keffiyeh hammock vinegar letterpress keytar selvage distillery pbr&b shoreditch scenester."], ["description", "Twee error et thundercats placeat hashtag. Viral excepturi 3 wolf moon intelligentsia voluptatibus voluptatem. Qui direct trade qui eum. Master schlitz quis sit officia sed. Five dollar toast perspiciatis quia. Fixie cum before they sold out neutra mlkshk humblebrag disrupt irony."], ["created_at", "2016-06-13 19:17:22.009018"], ["updated_at", "2016-06-13 19:17:22.009018"]]
+  [1m[36m (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/q1" for 127.0.0.1 at 2016-06-13 15:17:57 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"q1"}
+  [1m[35mQuestion Load (1.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 11ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Mustache stumptown occupy raw denim humblebrag blue bottle tacos knausgaard ugh tofu forage normcore."], ["description", "Taxidermy whatever ipsum sint praesentium twee williamsburg goth. Nulla et five dollar toast quia. Post-ironic ea repudiandae kitsch reiciendis. Quae gentrify eligendi quisquam carry. Wayfarers est provident eius ut sint pop-up dreamcatcher. Placeat qui selfies. Ducimus accusantium ipsum animi ennui."], ["created_at", "2016-06-13 19:18:12.912246"], ["updated_at", "2016-06-13 19:18:12.912246"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Asymmetrical tilde wes anderson umami poutine bitters whatever post-ironic locavore before they sold out."], ["description", "Bicycle rights tenetur sriracha. Hella dignissimos aut cardigan quos. Swag cornhole deleniti messenger bag vinyl autem ex sit. Molestiae ad wes anderson health quisquam. Et fuga banjo provident odio officiis migas. Pabst plaid bitters. Tenetur pinterest enim vinegar. Bitters excepturi sunt aperiam tote bag."], ["created_at", "2016-06-13 19:18:12.917529"], ["updated_at", "2016-06-13 19:18:12.917529"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Trust fund jean shorts whatever five dollar toast iphone tattooed master loko williamsburg irony bitters kitsch fixie austin freegan."], ["description", "Qui chia et qui voluptas aesthetic rerum. Et molestiae skateboard laboriosam venmo. Incidunt ugh semiotics loko ennui. Adipisci veniam pop-up vinyl franzen. Vegan accusantium shoreditch. Whatever chambray tempora fugiat nemo vegan. Delectus magnam voluptas green juice hella park aut. Laudantium bicycle rights taxidermy vero small batch quisquam chia gentrify."], ["created_at", "2016-06-13 19:18:12.922516"], ["updated_at", "2016-06-13 19:18:12.922516"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:18:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.8ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 188ms (Views: 186.2ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Portland austin chambray raw denim readymade letterpress pop-up actually seitan meditation pour-over keytar franzen knausgaard thundercats."], ["description", "Aliquid neutra magni. Photo booth viral hammock retro. Sit libero sunt unde qui nihil. Leggings inventore fugit praesentium autem shabby chic post-ironic. Messenger bag hashtag food truck nulla labore quia fugit. Et ea ut voluptatem lo-fi art party quibusdam. Sint aut readymade. Sequi sint in williamsburg dicta exercitationem."], ["created_at", "2016-06-13 19:18:13.138128"], ["updated_at", "2016-06-13 19:18:13.138128"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hashtag tacos pitchfork health fap pug taxidermy art party gentrify green juice yolo vhs bushwick 90's disrupt."], ["description", "Forage helvetica mlkshk ut et yolo fuga. Ex nemo selfies craft beer beatae dolorum earum. Et quia delectus sit artisan marfa reprehenderit. Fugiat chambray nihil wolf similique hic church-key eius. You probably haven't heard of them animi polaroid messenger bag rerum laborum. Squid atque veritatis modi. Et sit omnis eos id et natus soluta. Omnis nisi consequatur ex quia expedita eos."], ["created_at", "2016-06-13 19:18:13.142745"], ["updated_at", "2016-06-13 19:18:13.142745"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Fap tofu put a bird on it kinfolk skateboard lo-fi drinking pour-over mlkshk keffiyeh roof."], ["description", "Meggings cupiditate mixtape. Voluptates +1 sequi synth flexitarian hic asymmetrical. 3 wolf moon omnis qui. Nesciunt park qui voluptate et trust fund beatae franzen. Actually rerum molestiae temporibus. Praesentium cardigan tilde delectus kitsch forage distinctio. Trust fund facere hashtag stumptown laboriosam asymmetrical iste."], ["created_at", "2016-06-13 19:18:13.145181"], ["updated_at", "2016-06-13 19:18:13.145181"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:18:13 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Organic meh mustache meggings pork belly chillwave pabst narwhal distillery humblebrag everyday beard."], ["description", "Knausgaard molestiae aut venmo asymmetrical excepturi esse cliche. Marfa taxidermy everyday paleo. Cupiditate kitsch chambray quod. Hoodie kale chips selvage sit kinfolk twee sunt. Occaecati master delectus harum disrupt. Est libero fingerstache doloremque dolore pug. Impedit roof voluptatem nobis narwhal jean shorts meggings in. Minima raw denim vel paleo."], ["created_at", "2016-06-13 19:18:13.167759"], ["updated_at", "2016-06-13 19:18:13.167759"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/102" for 127.0.0.1 at 2016-06-13 15:18:16 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 102]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "+1 actually seitan taxidermy lomo pitchfork wayfarers vice butcher messenger bag chartreuse viral."], ["description", "Photo booth ethical perspiciatis. Ut pitchfork roof error voluptate xoxo try-hard. Nisi qui consequuntur. Voluptatum whatever totam repudiandae migas. Butcher veniam swag modi neque vero. Consequatur vinegar sed. Kale chips porro laudantium harum cliche."], ["created_at", "2016-06-13 19:19:13.008738"], ["updated_at", "2016-06-13 19:19:13.008738"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Polaroid plaid migas banjo retro brunch tilde dreamcatcher mixtape butcher slow-carb."], ["description", "Raw denim velit adipisci eos esse rerum. Corrupti photo booth eos. Marfa poutine drinking esse humblebrag deserunt brunch. Fixie nihil consequatur vero expedita. Literally 8-bit gentrify nulla actually. Kickstarter harum kale chips portland quia vel. Nesciunt ut disrupt velit retro. Bushwick laborum pinterest omnis."], ["created_at", "2016-06-13 19:19:13.013828"], ["updated_at", "2016-06-13 19:19:13.013828"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Williamsburg 8-bit yuccie bespoke mustache gastropub shabby chic plaid normcore austin tacos fashion axe letterpress."], ["description", "Health voluptas recusandae offal ratione fingerstache. Selvage accusamus ugh fap. Est impedit alias aut kickstarter. Pitchfork voluptatem in expedita. Yuccie eum occaecati non nesciunt qui. Totam slow-carb non aut assumenda distinctio. Quisquam leggings eveniet veniam praesentium sint perspiciatis doloremque. Selfies sriracha quas."], ["created_at", "2016-06-13 19:19:13.016017"], ["updated_at", "2016-06-13 19:19:13.016017"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:19:13 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 192ms (Views: 190.7ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Helvetica put a bird on it schlitz poutine meggings jean shorts echo plaid kombucha lumbersexual mustache."], ["description", "Numquam carry offal. Forage quia earum quasi. Kale chips farm-to-table artisan. Accusantium impedit vinyl cum. Ab lomo et odio natus vel kale chips. Yuccie exercitationem assumenda. Mumblecore harum culpa."], ["created_at", "2016-06-13 19:19:13.231291"], ["updated_at", "2016-06-13 19:19:13.231291"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Readymade fanny pack park scenester knausgaard selvage locavore farm-to-table blue bottle franzen master."], ["description", "Thundercats aliquam yolo bushwick. Umami normcore libero alias voluptatem park dolorem pop-up. Temporibus qui molestias corporis sint sit. Sunt ut ut vinyl ennui unde offal. Quae slow-carb recusandae cold-pressed pitchfork. Voluptas minus intelligentsia reprehenderit raw denim qui laborum. Cliche ut nobis deep v quia normcore. Kogi beard rerum synth celiac debitis hella."], ["created_at", "2016-06-13 19:19:13.233999"], ["updated_at", "2016-06-13 19:19:13.233999"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Normcore humblebrag bitters sartorial chartreuse banh mi fanny pack you probably haven't heard of them before they sold out meditation loko pour-over shoreditch."], ["description", "Synth park tacos sit plaid bushwick impedit. Deep v quidem perferendis deserunt mlkshk. Ut dolorum keffiyeh irony green juice wes anderson cupiditate. 8-bit nesciunt voluptatibus numquam tacos tousled enim. Austin quae et retro fixie. Pour-over truffaut et actually yr."], ["created_at", "2016-06-13 19:19:13.236021"], ["updated_at", "2016-06-13 19:19:13.236021"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:19:13 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Paleo pbr&b austin selfies microdosing biodiesel mustache yuccie trust fund williamsburg asymmetrical forage normcore occupy next level."], ["description", "Lumbersexual voluptate echo crucifix organic distinctio. Iusto vel keytar organic dignissimos. Selfies flannel heirloom praesentium green juice nisi sunt. Park consequatur echo quo totam. Veritatis craft beer autem seitan. Hammock nihil aspernatur totam ipsa squid quia."], ["created_at", "2016-06-13 19:19:13.246989"], ["updated_at", "2016-06-13 19:19:13.246989"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/109" for 127.0.0.1 at 2016-06-13 15:19:13 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"109"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 109]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Chia bespoke salvia everyday sustainable wayfarers 3 wolf moon banjo marfa bitters vinegar yuccie church-key raw denim."], ["description", "Pop-up microdosing austin trust fund occaecati qui knausgaard repellat. Sartorial neque explicabo plaid offal error echo. Unde dolorem sint schlitz mlkshk explicabo. Aperiam eum rem mollitia marfa sartorial. Qui put a bird on it eius esse nulla. Illum diy consequatur ea. Normcore temporibus quisquam quo wolf polaroid cliche shabby chic. Sit est corrupti meggings."], ["created_at", "2016-06-13 19:21:28.143363"], ["updated_at", "2016-06-13 19:21:28.143363"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Kitsch cleanse ramps before they sold out retro cornhole fashion axe bushwick put a bird on it pabst umami quinoa literally next level tattooed."], ["description", "Quae salvia lo-fi 90's expedita impedit. Artisan quis pickled skateboard yolo. Non slow-carb organic excepturi venmo. Ennui distillery ea gastropub non tempore deep v. Leggings mlkshk organic. Before they sold out harum nesciunt occupy."], ["created_at", "2016-06-13 19:21:28.148736"], ["updated_at", "2016-06-13 19:21:28.148736"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Heirloom fanny pack mustache marfa kogi yr pitchfork vegan semiotics distillery lomo banjo paleo."], ["description", "Deep v occupy taxidermy. Readymade kickstarter provident banh mi. Pop-up dolorum 3 wolf moon pinterest shoreditch forage repudiandae. Eum itaque reprehenderit. Nobis rem shabby chic street quis autem. Heirloom food truck modi autem facilis cliche blanditiis."], ["created_at", "2016-06-13 19:21:28.151606"], ["updated_at", "2016-06-13 19:21:28.151606"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:21:28 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 169ms (Views: 167.7ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Fanny pack post-ironic master cleanse tilde occupy bespoke yolo gentrify wayfarers."], ["description", "Assumenda sequi tenetur maiores humblebrag esse lomo porro. Cornhole iste maiores quasi kickstarter consequuntur. Meditation minus truffaut aperiam pariatur nemo. Autem earum rerum dolorem pug offal qui shoreditch. Brooklyn dolorum pitchfork dicta vel sed. Everyday ut libero aperiam quae mollitia mixtape. Carry taxidermy eius aut biodiesel eum vel est. Sapiente diy quia fuga."], ["created_at", "2016-06-13 19:21:28.346812"], ["updated_at", "2016-06-13 19:21:28.346812"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Plaid art party pabst chicharrones taxidermy tilde pitchfork pour-over selvage kombucha tote bag."], ["description", "Dolor asymmetrical cold-pressed narwhal sustainable. Velit reprehenderit est reiciendis recusandae saepe. Laboriosam maxime cornhole nulla. Minima minus quinoa ratione facilis dolorem. Irony blog esse kombucha post-ironic et a dolorum. Health iste fugit quae et et. Migas libero accusamus. Tote bag ullam artisan."], ["created_at", "2016-06-13 19:21:28.349520"], ["updated_at", "2016-06-13 19:21:28.349520"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Blog craft beer asymmetrical pabst artisan messenger bag truffaut microdosing ennui cronut post-ironic mustache pickled."], ["description", "Ut eveniet asperiores laborum non neutra. Tote bag butcher veritatis. Organic yr quia. Qui asperiores omnis veniam sed magni. Quo dolore non et aut. Next level quam post-ironic. Consequatur velit provident."], ["created_at", "2016-06-13 19:21:28.352819"], ["updated_at", "2016-06-13 19:21:28.352819"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:21:28 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Bicycle rights cold-pressed street authentic hoodie mlkshk cray cleanse freegan messenger bag health selfies gluten-free."], ["description", "Typewriter eum minus molestiae austin soluta. Architecto soluta mollitia cupiditate consequatur aspernatur direct trade. Et ut tattooed narwhal non. Quam cred bespoke small batch officia before they sold out cardigan. Yuccie health cornhole scenester ducimus. Actually chartreuse voluptas voluptas consequatur incidunt dolorum. Pop-up mlkshk eius. Neque cronut gastropub vinyl ducimus +1 repellat."], ["created_at", "2016-06-13 19:22:07.037158"], ["updated_at", "2016-06-13 19:22:07.037158"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/116" for 127.0.0.1 at 2016-06-13 15:22:07 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"116"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 116]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Vinyl kickstarter brunch chartreuse lomo art party try-hard cray hammock meggings."], ["description", "Aut rerum fugit salvia rem ea keytar. Assumenda sapiente freegan sit cupiditate paleo artisan accusamus. Sapiente voluptatem fugit tacos blanditiis molestiae small batch. Adipisci paleo non microdosing organic. Natus carry farm-to-table irony meggings dolor. Fingerstache hic dolorem voluptas omnis qui ad. Ea yolo vitae architecto dolorem 8-bit voluptatem deleniti. Nesciunt quas in assumenda craft beer chia."], ["created_at", "2016-06-13 19:22:32.887575"], ["updated_at", "2016-06-13 19:22:32.887575"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Artisan kitsch cronut shabby chic sartorial dreamcatcher pabst craft beer wolf narwhal banh mi jean shorts vhs retro."], ["description", "Officia natus quidem velit omnis. Waistcoat reiciendis intelligentsia quis sit. Quibusdam flexitarian voluptatum et aut. Consectetur meh iure est. Listicle ramps voluptas sunt tempora. At blanditiis ipsam health. Flexitarian 90's yr synth disrupt sapiente. Fanny pack modi magnam nihil ut suscipit ipsa."], ["created_at", "2016-06-13 19:22:32.895657"], ["updated_at", "2016-06-13 19:22:32.895657"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Skateboard ugh etsy cleanse master chambray kombucha fanny pack shabby chic truffaut post-ironic."], ["description", "Quia fixie authentic mollitia polaroid. Synth perspiciatis distillery consequatur eius ut facere. Five dollar toast ut sed viral organic. Similique letterpress bicycle rights laboriosam trust fund flannel food truck. Ullam quo praesentium. Velit seitan delectus."], ["created_at", "2016-06-13 19:22:32.898136"], ["updated_at", "2016-06-13 19:22:32.898136"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:22:32 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 180ms (Views: 179.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Seitan art party deep v fixie pabst everyday poutine tousled before they sold out cray synth."], ["description", "Flexitarian saepe post-ironic. Kickstarter tilde quibusdam quia. Normcore photo booth occaecati a et qui odit migas. Nam locavore ea roof. Ipsam pitchfork craft beer. Ullam et accusamus aut leggings quo. Natus soluta narwhal debitis mumblecore."], ["created_at", "2016-06-13 19:22:33.101203"], ["updated_at", "2016-06-13 19:22:33.101203"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Fanny pack helvetica marfa swag craft beer narwhal pickled +1 street salvia trust fund typewriter."], ["description", "Fugiat explicabo literally. Helvetica reiciendis meditation craft beer. Nam sit master. Squid nobis waistcoat iphone deleniti amet ex qui. Kinfolk chicharrones et aut. Accusantium repellendus ea iste eos assumenda sunt fingerstache. Cliche disrupt keffiyeh stumptown eveniet eligendi."], ["created_at", "2016-06-13 19:22:33.103808"], ["updated_at", "2016-06-13 19:22:33.103808"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Deep v beard offal loko kinfolk fashion axe slow-carb freegan tote bag yr normcore."], ["description", "Numquam gluten-free fingerstache reiciendis etsy letterpress keffiyeh everyday. Organic et etsy tenetur. Chia vegan hic. Pickled unde accusantium dolor freegan sint typewriter trust fund. Fixie debitis suscipit nesciunt repellat asperiores. Master aut goth church-key semiotics flannel. Ullam aut tempora migas ethical nisi yuccie."], ["created_at", "2016-06-13 19:22:33.106341"], ["updated_at", "2016-06-13 19:22:33.106341"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:22:33 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cornhole brunch trust fund pabst chia 90's vhs celiac keytar letterpress aesthetic bitters godard pinterest neutra."], ["description", "Thundercats godard tousled food truck et cleanse. Yolo microdosing synth quas lumbersexual temporibus 3 wolf moon. Carry kinfolk consequatur blanditiis et natus. In loko sit butcher commodi godard ab fap. Try-hard reprehenderit selfies in et mollitia. Adipisci austin pop-up dolores umami wes anderson tacos a."], ["created_at", "2016-06-13 19:22:33.116337"], ["updated_at", "2016-06-13 19:22:33.116337"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/123" for 127.0.0.1 at 2016-06-13 15:22:33 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 123]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Leggings roof mustache everyday meh plaid you probably haven't heard of them bicycle rights mumblecore jean shorts cred tousled photo booth."], ["description", "Modi wayfarers est brunch next level. Raw denim pbr&b disrupt accusamus dolorem temporibus. Quaerat truffaut maiores et et beard. Necessitatibus iusto bitters voluptas. Quasi before they sold out food truck vegan vinegar 3 wolf moon. Iste squid leggings."], ["created_at", "2016-06-13 19:27:12.215169"], ["updated_at", "2016-06-13 19:27:12.215169"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cold-pressed microdosing schlitz flannel thundercats fanny pack kale chips humblebrag cray 3 wolf moon etsy food truck cliche."], ["description", "Nihil actually ipsam cred umami quis dolorem. Messenger bag swag voluptates asymmetrical dignissimos sequi pabst. Cleanse bicycle rights direct trade +1 aliquid autem nulla sequi. Aut next level molestiae diy numquam cronut quod explicabo. Offal et vel eos tempore schlitz rerum blue bottle. Non leggings kogi molestiae kinfolk saepe vice possimus. Sunt rerum xoxo est chillwave est perspiciatis."], ["created_at", "2016-06-13 19:27:12.222052"], ["updated_at", "2016-06-13 19:27:12.222052"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Master salvia paleo pinterest goth pork belly pug cleanse crucifix hoodie vhs lo-fi blog."], ["description", "Vitae magni magnam. Cum iure rerum impedit sunt. Selvage scenester rerum ea messenger bag venmo recusandae. Corporis beard voluptate austin officiis nesciunt stumptown beatae. Wes anderson sint twee cumque nostrum recusandae dolores. Similique dolorem est doloribus ex minima street. Raw denim blog austin tacos. Next level retro eveniet odio quia."], ["created_at", "2016-06-13 19:27:12.224589"], ["updated_at", "2016-06-13 19:27:12.224589"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:27:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 210ms (Views: 207.7ms | ActiveRecord: 1.2ms)
+  [1m[36m (1.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Meditation intelligentsia tilde whatever sriracha pabst synth small batch normcore keytar 8-bit pickled gluten-free etsy."], ["description", "Neque heirloom ut organic excepturi. Non kickstarter aut craft beer shabby chic omnis mustache omnis. Polaroid taxidermy consequatur enim. Before they sold out wolf repudiandae optio maiores rerum poutine. Austin est typewriter nemo voluptas magnam. Autem kinfolk kogi you probably haven't heard of them repudiandae truffaut perspiciatis. Illo aut ethical."], ["created_at", "2016-06-13 19:27:12.468200"], ["updated_at", "2016-06-13 19:27:12.468200"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Actually flexitarian food truck twee tacos wes anderson meditation freegan scenester put a bird on it migas godard williamsburg aesthetic salvia."], ["description", "Beatae sit thundercats skateboard sapiente consequatur. Five dollar toast repudiandae cronut reiciendis eligendi excepturi. Deep v quasi illo xoxo porro synth harum suscipit. Sit dolorum ex cum perferendis. Asymmetrical schlitz retro et. Bushwick alias sriracha. Franzen squid normcore ut forage tenetur dolorum. Recusandae franzen poutine neque butcher eos quidem."], ["created_at", "2016-06-13 19:27:12.472941"], ["updated_at", "2016-06-13 19:27:12.472941"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cliche leggings kinfolk synth sriracha marfa fashion axe cronut pork belly blue bottle viral."], ["description", "Quia a sit. Eos dignissimos diy dolor voluptas. Necessitatibus rerum tilde. Photo booth occupy fanny pack yolo kickstarter omnis. Sunt fugit sunt. Gentrify assumenda error cum."], ["created_at", "2016-06-13 19:27:12.475004"], ["updated_at", "2016-06-13 19:27:12.475004"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:27:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.6ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Pabst crucifix photo booth flexitarian chia schlitz microdosing brooklyn actually portland kombucha."], ["description", "Eos est authentic. Banh mi excepturi rerum pinterest chicharrones goth hoodie ugh. Jean shorts fashion axe doloribus pour-over quas. Harum in austin mumblecore deleniti voluptate sed. Dolor semiotics kogi fugit deserunt exercitationem. Odio church-key quae voluptates voluptatum poutine perferendis eos. Veniam synth health kitsch cronut at laborum cold-pressed."], ["created_at", "2016-06-13 19:27:12.488361"], ["updated_at", "2016-06-13 19:27:12.488361"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/130" for 127.0.0.1 at 2016-06-13 15:27:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"130"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 130]]
+  Rendered questions/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Paleo church-key flexitarian chartreuse yr intelligentsia wayfarers kale chips tote bag bitters forage vice."], ["description", "Vero nam assumenda tenetur lumbersexual rem authentic est. Aut placeat ennui. Chambray alias doloremque. Plaid vinegar sit swag. Temporibus inventore franzen occupy five dollar toast aut. Ipsa cred messenger bag."], ["created_at", "2016-06-13 19:31:10.794292"], ["updated_at", "2016-06-13 19:31:10.794292"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cardigan ennui pitchfork bicycle rights food truck mustache gastropub pabst selvage shabby chic kogi ethical."], ["description", "Vero slow-carb non meggings green juice. Aesthetic celiac cred deleniti lomo quinoa. Lumbersexual messenger bag id deserunt kale chips. Etsy ut quidem dolorem hammock actually single-origin coffee. Qui fingerstache repudiandae est blog itaque sustainable. Perferendis quinoa rem thundercats polaroid post-ironic. Carry occupy trust fund wes anderson. Tacos chicharrones ramps selvage."], ["created_at", "2016-06-13 19:31:10.803369"], ["updated_at", "2016-06-13 19:31:10.803369"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Listicle vhs 90's tote bag carry tumblr kitsch you probably haven't heard of them fap pug banjo post-ironic +1 shoreditch."], ["description", "Amet qui chia heirloom. Libero necessitatibus williamsburg tenetur eligendi locavore. Occaecati non odio literally meggings repellendus marfa sed. Selvage small batch sed. Hic ipsa five dollar toast small batch. Corrupti cliche flannel sed. Umami banh mi franzen sed vitae nihil voluptatem. Synth nulla mollitia est."], ["created_at", "2016-06-13 19:31:10.805895"], ["updated_at", "2016-06-13 19:31:10.805895"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:31:10 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cray readymade wayfarers salvia bicycle rights blue bottle typewriter dreamcatcher everyday portland biodiesel food truck."], ["description", "Ut perspiciatis chillwave. Autem voluptatem quo tousled offal. Raw denim freegan est church-key velit waistcoat. Illum bespoke neque sustainable non mumblecore. Scenester letterpress et quo et seitan quis. Velit facere voluptatibus pbr&b single-origin coffee doloribus. In qui tenetur authentic."], ["created_at", "2016-06-13 19:31:11.028349"], ["updated_at", "2016-06-13 19:31:11.028349"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Yolo leggings aesthetic chicharrones cred stumptown wolf chia deep v bitters cliche."], ["description", "Five dollar toast voluptas dolores quam. Quidem quaerat dolor. Nihil vhs you probably haven't heard of them aliquid ducimus kickstarter odit. Perspiciatis blanditiis porro. Ennui +1 distillery small batch aliquid tempore laborum reiciendis. Aspernatur aut sed normcore. Irony meggings carry literally gentrify pinterest quo. Sint asperiores blue bottle gluten-free."], ["created_at", "2016-06-13 19:31:11.033189"], ["updated_at", "2016-06-13 19:31:11.033189"]]
+  [1m[35m (0.7ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Meggings flannel lomo park green juice franzen humblebrag before they sold out schlitz everyday."], ["description", "Id aut vitae qui direct trade wes anderson. Iphone laborum yr et sint celiac vel brunch. Aliquam labore voluptates art party quod ipsum porro kinfolk. Quinoa distillery qui maiores next level skateboard lo-fi consequuntur. Quas yolo seitan. Debitis sed ut actually whatever kogi vel. Quia illo artisan."], ["created_at", "2016-06-13 19:31:11.037791"], ["updated_at", "2016-06-13 19:31:11.037791"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:31:11 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Chillwave pickled kickstarter cleanse thundercats yolo five dollar toast pour-over 3 wolf moon mustache."], ["description", "Xoxo thundercats raw denim sapiente nostrum kinfolk iphone. Voluptas godard organic blue bottle. Shabby chic rerum et. Cardigan tempora ennui pour-over chicharrones neque. Irony goth cold-pressed asperiores. Sapiente aliquid pabst actually est loko."], ["created_at", "2016-06-13 19:31:11.045947"], ["updated_at", "2016-06-13 19:31:11.045947"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:31:11 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Banjo vegan venmo truffaut roof twee umami selfies bespoke diy bitters put a bird on it thundercats chartreuse."], ["description", "Sit kinfolk kitsch est. Veniam autem pariatur stumptown praesentium possimus master viral. Hammock asymmetrical poutine eos omnis chartreuse. Animi ea cred expedita deserunt nisi quibusdam. Ea pork belly quod asperiores. Tilde a lumbersexual cleanse consequuntur. Blanditiis facere sint omnis."], ["created_at", "2016-06-13 19:31:11.058102"], ["updated_at", "2016-06-13 19:31:11.058102"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/138" for 127.0.0.1 at 2016-06-13 15:31:11 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"138"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 138]]
+  Rendered questions/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Listicle venmo street blog knausgaard deep v food truck marfa flexitarian tumblr distillery."], ["description", "You probably haven't heard of them cupiditate artisan ullam put a bird on it neque. Sed hammock omnis diy thundercats. Dolor occaecati accusamus possimus meh unde twee. Skateboard flannel quinoa temporibus. Labore accusamus pariatur unde locavore enim. Squid vitae quae illum consequatur. Knausgaard +1 diy sit esse omnis. Qui goth facilis."], ["created_at", "2016-06-13 19:33:53.951750"], ["updated_at", "2016-06-13 19:33:53.951750"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cornhole wes anderson celiac goth direct trade irony master park sriracha bespoke."], ["description", "Officia assumenda sartorial farm-to-table. Dicta raw denim synth biodiesel ex voluptas. Raw denim gastropub repellendus ut. Locavore corporis sint. Aut porro nam. Swag blanditiis vhs pbr&b aperiam occupy mixtape est. Yr direct trade unde voluptas. Soluta vitae kombucha messenger bag swag fuga consectetur sunt."], ["created_at", "2016-06-13 19:33:53.957778"], ["updated_at", "2016-06-13 19:33:53.957778"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Banjo locavore artisan skateboard sustainable hoodie salvia offal diy forage tumblr green juice truffaut wolf."], ["description", "Beard aperiam accusamus accusantium deserunt. Crucifix ethical debitis keffiyeh. Aut aut quia wes anderson mixtape health. Suscipit banh mi flannel. Ipsa eaque saepe normcore shabby chic. Aut paleo nobis sartorial ab alias park."], ["created_at", "2016-06-13 19:33:53.959924"], ["updated_at", "2016-06-13 19:33:53.959924"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:33:53 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 154ms (Views: 152.4ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Fixie typewriter marfa shoreditch cardigan keytar gastropub quinoa crucifix mixtape direct trade taxidermy wolf echo yolo."], ["description", "Nihil gentrify iste cray praesentium. Retro aut aut ramps. Fixie autem aut cold-pressed shoreditch single-origin coffee vice non. Est green juice soluta sed velit dolorem delectus. Possimus illo iure doloremque vegan microdosing. Et tote bag aesthetic vinegar."], ["created_at", "2016-06-13 19:33:54.132604"], ["updated_at", "2016-06-13 19:33:54.132604"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Typewriter art party vhs master fanny pack bespoke retro pickled organic paleo next level trust fund tousled beard meh."], ["description", "Pork belly debitis semiotics veniam pop-up humblebrag. Intelligentsia banh mi eum pickled ratione libero eum tofu. Fingerstache autem dolorem quia. Vel biodiesel aperiam explicabo. Tempore kombucha tacos pabst occupy architecto laborum. Eveniet cliche bespoke jean shorts iusto consectetur."], ["created_at", "2016-06-13 19:33:54.134818"], ["updated_at", "2016-06-13 19:33:54.134818"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Ennui viral vinyl vinegar vegan selfies paleo keffiyeh fap forage kinfolk."], ["description", "Leggings eligendi vel. Et green juice nulla sapiente. Tacos voluptatem health libero. Molestiae vel cornhole ipsam eveniet. Molestiae disrupt odio everyday small batch tilde sit. Tempore aut laudantium. Maiores ratione normcore diy aut. Facere accusantium aesthetic unde et."], ["created_at", "2016-06-13 19:33:54.136950"], ["updated_at", "2016-06-13 19:33:54.136950"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:33:54 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Yuccie cornhole post-ironic bushwick biodiesel whatever occupy craft beer ennui semiotics knausgaard."], ["description", "Quia accusantium eos labore eligendi deleniti carry. Seitan banjo deep v. Enim consequatur loko kickstarter farm-to-table carry et consectetur. Cray iure bespoke echo impedit debitis. Photo booth blog quo waistcoat. Praesentium meggings hoodie twee cold-pressed quis odit voluptas."], ["created_at", "2016-06-13 19:33:54.145437"], ["updated_at", "2016-06-13 19:33:54.145437"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-13 15:33:54 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+Started GET "/questions/145" for 127.0.0.1 at 2016-06-13 15:33:54 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"145"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 145]]
+  Rendered questions/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Bushwick helvetica 90's brunch cold-pressed fanny pack disrupt cardigan direct trade beard trust fund cray."], ["description", "Ennui dolorem tumblr doloremque pug salvia enim ipsum. Molestiae in placeat consectetur park ut yr laudantium. Eum quia corporis veritatis. Sunt polaroid rem whatever ut. Wolf next level kitsch dolorem 3 wolf moon perspiciatis ut. Delectus freegan error. Vegan quis aliquid enim messenger bag authentic suscipit."], ["created_at", "2016-06-13 19:33:54.166055"], ["updated_at", "2016-06-13 19:33:54.166055"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/questions/146" for 127.0.0.1 at 2016-06-13 15:33:54 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"146"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 146]]
+  Rendered questions/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
