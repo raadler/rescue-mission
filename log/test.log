@@ -7000,3 +7000,1027 @@ Processing by AnswersController#create as HTML
   Rendered questions/show.html.erb within layouts/application (3.8ms)
 Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.4ms)
   [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Minima similique aut quibusdam voluptatum quasi tempore laborum ipsa explicabo qui doloribus sequi."], ["description", "Vindico sed vinco cervus vereor. Velociter confido conor soleo illo utroque suppellex. Vereor tui fugiat exercitationem varius amissio molestias. Vae tollo qui terra spoliatio complectus. Odit corporis adipiscor peccatus decipio decerno cursus aestas. Verecundia aetas annus cotidie."], ["created_at", "2016-06-14 20:32:46.592084"], ["updated_at", "2016-06-14 20:32:46.592084"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Debitis modi sit eligendi est qui reiciendis dolor occaecati saepe pariatur itaque rerum necessitatibus."], ["description", "Tabella causa videlicet ullam. Universe arbustum callide aptus bellicus suggero tepidus torqueo. Agnosco coadunatio cornu careo demoror. Sint vos video. Cometes carmen desino defungo conduco adsidue. Fugit currus demo. Thesis depulso est spargo corona sunt amplus minima."], ["created_at", "2016-06-14 20:32:46.597619"], ["updated_at", "2016-06-14 20:32:46.597619"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Consequatur itaque magnam veritatis qui sed accusantium ea animi quo."], ["description", "Terror ea crepusculum vorago aer adulatio quas. Defluo conitor decretum. Votum velut eos statua amplus cumque catena delego. Vir varius tollo alii vulnus crux. Varietas eveniet tabesco modi damno. Voluptatem quo teres defendo terminatio auditor eos. Voluptatem autem verus thesaurus. Succurro colloco adulescens."], ["created_at", "2016-06-14 20:32:46.600092"], ["updated_at", "2016-06-14 20:32:46.600092"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.html.erb (7.2ms)
+Completed 200 OK in 176ms (Views: 174.3ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Perspiciatis impedit est doloribus hic maxime ipsum blanditiis quod repellat quia ab non cumque et."], ["description", "Virtus inflammatio earum universe atque vulgus nam comis. Patior cruciamentum vestigium vox adultus titulus. Correptius consequatur enim omnis deduco delectus balbus avaritia. Omnis valeo sustineo valde cibus tardus. Saepe alter esse apto carcer caterva rem vox. Umquam alias aestivus sufficio sui desino argumentum. Careo avaritia succurro turpis sum aer validus."], ["created_at", "2016-06-14 20:32:46.794465"], ["updated_at", "2016-06-14 20:32:46.794465"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Atque non ut odit eum cum similique reprehenderit temporibus quos sed officiis."], ["description", "Super cubo id. Iure triumphus amita aegrotatio. Soluta uterque amaritudo denique quidem aspernatur defungo auctor. Aut colo ait vulariter decerno. Tergo ars tutamen bibo. Et solitudo inventore caelestis pauci. Depraedor civis aeternus aliquid alo copia aqua chirographum."], ["created_at", "2016-06-14 20:32:46.796965"], ["updated_at", "2016-06-14 20:32:46.796965"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Et et qui adipisci itaque quia pariatur ut fugit sapiente ut quibusdam quia quas."], ["description", "Astrum bene calculus utilis tego clamo audeo sto. Ara et adultus appono thymbra complectus capio. Occaecati earum cubicularis. Advenio arma vae tres. Tergo comparo sophismata testimonium cohibeo theologus tamdiu. Cibo ratione timidus velit omnis apostolus qui libero."], ["created_at", "2016-06-14 20:32:46.799223"], ["updated_at", "2016-06-14 20:32:46.799223"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Nobis possimus pariatur recusandae molestiae vero id dicta deserunt laudantium officia adipisci non."], ["description", "Truculenter ager ullus. Dolores adficio numquam. Sperno somnus solvo error cupiditas versus vir. Denuncio ater solutio. Quia cimentarius vereor volo soluta laborum. Templum abutor tutamen absconditus. Usitas vociferor architecto tollo. Adipiscor libero arbor angelus apud thymbra comprehendo decipio."], ["created_at", "2016-06-14 20:32:46.807729"], ["updated_at", "2016-06-14 20:32:46.807729"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+Started GET "/questions/187" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"187"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 187]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 187]]
+  Rendered questions/show.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 10.3ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Necessitatibus quia et ullam nesciunt ea ut sit amet rerum aut aut non."], ["description", "Autem vapulus veritatis perspiciatis ratione abeo advenio magni. Distinctio arx animi dens. Auditor eius tergiversatio taedium tripudio ager. Deinde alveus auxilium suffoco. Cado creta cupiditas beatus. Cotidie colo defleo deserunt arceo dolore coruscus velut. Cogito peccatus crux vetus."], ["created_at", "2016-06-14 20:32:46.847658"], ["updated_at", "2016-06-14 20:32:46.847658"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/188" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"188"}
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 188]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 188]]
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 20:32:46.869439"], ["updated_at", "2016-06-14 20:32:46.869439"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/189
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+Started GET "/questions/189" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"189"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 189]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 189]]
+  Rendered questions/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Et neque sit quae architecto molestiae cum nam id et dolor vitae eos."], ["description", "Terra aeneus labore at ancilla acervus ab. Arbitro colloco ceno fugiat stultus adflicto clementia dicta. Sol apparatus quo ventosus verus debilito et. Expedita utrimque varietas. Temporibus viduo delicate accusantium uxor talus crinis exercitationem. Cetera cornu desolo carmen usque stipes spargo necessitatibus."], ["created_at", "2016-06-14 20:32:46.935853"], ["updated_at", "2016-06-14 20:32:46.935853"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/190" for 127.0.0.1 at 2016-06-14 16:32:46 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"190"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 190]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 190]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+Started POST "/questions/190/answers" for 127.0.0.1 at 2016-06-14 16:33:04 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"190"}
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered questions/show.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sunt distinctio blanditiis eos consequatur vel explicabo ad odit adipisci eaque repellat vitae facilis quia."], ["description", "Eum nesciunt auxilium abutor aggredior veniam. Eos vulgo desidero. Caveo tres tolero amplexus caput turbo attero. Velit sordeo totidem cultura aurum depraedor. Pecunia tredecim quo artificiose quae. Arca vilicus tutis soleo vinculum. Aggero abstergo delibero adsidue valetudo demergo summa. Attero optio clarus conservo desipio summisse abstergo aer."], ["created_at", "2016-06-14 20:33:12.401710"], ["updated_at", "2016-06-14 20:33:12.401710"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Esse qui repellendus ipsa assumenda delectus eius ipsam facilis quo dolores laborum sit."], ["description", "Tabesco crapula dolorem amo veritatis. Cito solvo nemo corroboro. Aduro consequatur aegrus aro quis. Tergeo aeneus uredo umerus ad varius aestas. Aeternus vinum trepide tremo suadeo cohors carbo. Tamen amor admoneo. Ratione vaco succedo temeritas temptatio. Valde solvo deripio deserunt pecco vester conforto."], ["created_at", "2016-06-14 20:33:12.407177"], ["updated_at", "2016-06-14 20:33:12.407177"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Dolores sed deserunt esse cum quisquam ut sunt cupiditate saepe sint."], ["description", "Desino aranea voluptas thesaurus admitto iusto quam absens. Approbo viriliter thermae auris. Eum defleo cras carmen curtus validus angustus nesciunt. Capto consequuntur textilis colo repudiandae decet. Absorbeo ago verumtamen doloremque auctor. Articulus amor et voluptas aliquid tepidus credo deleniti. Ad basium creator calcar."], ["created_at", "2016-06-14 20:33:12.410108"], ["updated_at", "2016-06-14 20:33:12.410108"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.html.erb (8.4ms)
+Completed 200 OK in 205ms (Views: 203.6ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sunt nihil sit id ex eius est omnis voluptas optio quia nobis aspernatur et."], ["description", "Infit mollitia adhuc. Ascit cohaero thesis baiulus calcar et. Comprehendo velut arca ancilla cupio. Ut velit creptio baiulus qui sophismata audacia. Appello ipsam esse ullus est damno. Facilis tenetur recusandae ullus adeptio incidunt ustilo."], ["created_at", "2016-06-14 20:33:12.638653"], ["updated_at", "2016-06-14 20:33:12.638653"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Voluptas eos repellat deleniti odit eum aut eos qui fugiat officiis."], ["description", "Cognatus demonstro corrupti. Toties venio perferendis corporis urbs caput derelinquo. Circumvenio adaugeo toties ancilla. Calcar decretum aperte provident talio depopulo. Quia talis tener coniuratio quia deleniti armo. Thesis ciminatio volup victus labore cilicium. Ago amissio casso tabgo."], ["created_at", "2016-06-14 20:33:12.641479"], ["updated_at", "2016-06-14 20:33:12.641479"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Ut quam et et aut voluptas corrupti delectus rem est odit enim totam laboriosam."], ["description", "Curis patria triduana deripio. Delinquo fugit attero thalassinus varius templum valens. Victoria cultura vel. Pauci quae desipio ducimus subseco clementia vero damnatio. Architecto claro decerno. Sed theca amet sint substantia. Deputo viduo absconditus aliquam auctor. Terminatio versus arma incidunt utilis chirographum."], ["created_at", "2016-06-14 20:33:12.643967"], ["updated_at", "2016-06-14 20:33:12.643967"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Dolor delectus similique dolores qui dolore maiores facere tempora qui quia quos ex sed."], ["description", "Sequi utor solum amplexus et sint virtus alii. Voluptatem administratio vinco conscendo. Utilis saepe vester quis eum enim. Tergo sublime tabula aestus animi adflicto spoliatio. Arx calamitas possimus conventus blandior adicio vilis. Similique admoneo vel. Animi vociferor absconditus celebrer confugo communis vapulus teneo."], ["created_at", "2016-06-14 20:33:12.656259"], ["updated_at", "2016-06-14 20:33:12.656259"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+Started GET "/questions/197" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"197"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 197]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 197]]
+  Rendered questions/show.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 13.6ms | ActiveRecord: 5.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Delectus quis dolorum hic eveniet est dicta est est laborum ut tenetur."], ["description", "Aqua colloco arcesso. Molestias arcus virga suscipio summa bis complectus est. Terror explicabo rem. Cohibeo attero conor aggredior. Dens abstergo volup vulpes vigilo velum umerus. Ascisco amita sed tamdiu beatus balbus tardus vulgo. Coruscus vulticulus virtus sollicito cum speculum arma."], ["created_at", "2016-06-14 20:33:12.707414"], ["updated_at", "2016-06-14 20:33:12.707414"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/198" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"198"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 198]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 198]]
+  Rendered questions/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 20:33:12.737385"], ["updated_at", "2016-06-14 20:33:12.737385"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/199
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+Started GET "/questions/199" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"199"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 199]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 199]]
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Iusto excepturi omnis inventore assumenda aut soluta dolores voluptate laboriosam."], ["description", "Censura culpa deludo. Confugo textor amitto attero. Dapifer verus amet torqueo vigor. Compello apparatus cavus spero. Super via utrum. Tametsi arguo tam est."], ["created_at", "2016-06-14 20:33:12.824459"], ["updated_at", "2016-06-14 20:33:12.824459"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/200" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"200"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 200]]
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 200]]
+  Rendered questions/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+Started POST "/questions/200/answers" for 127.0.0.1 at 2016-06-14 16:33:12 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"200"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered questions/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Dolor et enim molestias ea quos dolorem esse distinctio est adipisci."], ["description", "Patior decor viriliter accusator vero statim eum. Iusto cultellus arbustum patrocinor. Dolor tergeo non administratio. Balbus crepusculum demens. Ut verto aqua vel deinde crastinus ascit. Caritas charisma torqueo clibanus et delego concido terminatio. Cognomen capillus eaque certo suadeo voluptatem. Vix attollo culpa attonbitus ager vinculum pecto unde."], ["created_at", "2016-06-14 20:48:06.725433"], ["updated_at", "2016-06-14 20:48:06.725433"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tempora quae facilis quaerat ea est et hic et ducimus voluptate vel omnis aut ipsum."], ["description", "Balbus alias cado viduata verus tero. Abbas nobis curatio arma tero quas conduco maxime. Culpo verumtamen tendo vulnero soluta pectus aegre basium. Unus ter colligo celebrer abeo est anser strues. Vinco depereo utroque amaritudo tredecim. Sursum sit valeo paulatim crux speciosus tertius et. Adflicto quia apparatus unus et cicuta cognatus viridis. Demum videlicet degero."], ["created_at", "2016-06-14 20:48:06.731029"], ["updated_at", "2016-06-14 20:48:06.731029"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Eum voluptatibus et sequi officia ut aut nobis doloribus quasi modi asperiores."], ["description", "Aut acerbitas undique vobis solio benigne quaerat consequatur. Tutis traho deficio neque audeo curriculum careo aliquid. Ciminatio dolorem ars accendo ulterius colloco arto. Cum denego defessus canis tergiversatio aut ventosus. Tantillus aetas est itaque tactus ea autem suffragium. Similique ulciscor vivo enim bardus volaticus virtus. Abutor thymbra comes."], ["created_at", "2016-06-14 20:48:06.733535"], ["updated_at", "2016-06-14 20:48:06.733535"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:48:06 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.html.erb (7.7ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Quo dignissimos quam facere eveniet molestias autem illo laboriosam aliquam eaque nobis ad iure delectus."], ["description", "Infit sui adinventitias claudeo vespillo ad cultellus. Collum asper carus facilis qui surgo certe et. Sui adeptio acsi artificiose. Aestivus dignissimos atavus. Tredecim desino versus voluptatum. Aut vulpes vinum voveo verto."], ["created_at", "2016-06-14 20:48:06.940227"], ["updated_at", "2016-06-14 20:48:06.940227"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tenetur in vitae temporibus enim voluptatem aut harum rem nisi unde deserunt ad."], ["description", "Degenero capio sperno campana tyrannus spero. Magni deripio suppono sonitus audacia. Atque sit ocer cupio sto defessus tabernus. Vel ustulo decumbo cur cibus corrigo. Blanditiis defluo peccatus thymum temporibus spiritus culpo virtus. Accendo acervus aequitas. Currus ad recusandae subvenio adflicto. Appello magni molestias admiratio desino aperio."], ["created_at", "2016-06-14 20:48:06.942712"], ["updated_at", "2016-06-14 20:48:06.942712"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Eligendi nihil aperiam illum omnis ratione voluptas cumque eum quidem repudiandae possimus."], ["description", "Bellum tam nulla supra. Stultus tandem caveo sunt surculus sto depereo. Decumbo absque certo laboriosam campana vehemens auris tondeo. Truculenter a dolor. Benevolentia tempus ventito. Calculus amaritudo carbo villa constans. Coadunatio vomito absorbeo."], ["created_at", "2016-06-14 20:48:06.945366"], ["updated_at", "2016-06-14 20:48:06.945366"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:48:06 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Est vero in modi autem ratione saepe dicta ipsa ab voluptates iure."], ["description", "Aufero dedecor aestus exercitationem corrumpo. Admoveo curatio theologus. Validus tubineus ratione vobis cervus accommodo est. Theca vitiosus molestiae vapulus tunc casus qui tendo. Cum suasoria quo sufficio vel aliqua. Defigo et cattus adinventitias conatus auxilium eos."], ["created_at", "2016-06-14 20:48:06.953702"], ["updated_at", "2016-06-14 20:48:06.953702"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:48:06 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+Started GET "/questions/207" for 127.0.0.1 at 2016-06-14 16:48:06 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"207"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 207]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 207]]
+  Rendered questions/show.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 12.8ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Quia maxime eligendi architecto eum molestiae consectetur voluptatum quo aut ut nemo quibusdam qui molestiae."], ["description", "Decerno amicitia uredo terreo animus thymum sapiente. Coruscus vulgaris ducimus angelus colligo urbanus. Omnis illum curo tondeo possimus cimentarius. Astrum subseco quam cupio. Vis fugiat tabella caelestis. Traho doloribus dedico tracto. Dignissimos bene colligo stips arbustum."], ["created_at", "2016-06-14 20:48:06.996970"], ["updated_at", "2016-06-14 20:48:06.996970"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/208" for 127.0.0.1 at 2016-06-14 16:48:06 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"208"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 208]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 208]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 20:48:07.021516"], ["updated_at", "2016-06-14 20:48:07.021516"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/209
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+Started GET "/questions/209" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"209"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 209]]
+  [1m[35mAnswer Load (0.6ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 209]]
+  Rendered questions/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Facilis et fugit nihil distinctio est quos nisi illo culpa."], ["description", "Cibo consectetur arcus pecunia cito cado. Truculenter sunt sursum vel somnus abeo reprehenderit curriculum. Ceno amplus aut. Exercitationem alioqui suffoco talio ratione theologus. Credo cresco pel communis consequatur brevis derideo solum. Stabilis venustas stips pel. Tredecim arguo expedita pecunia vel somniculosus libero. Cogito suppellex peior vinculum."], ["created_at", "2016-06-14 20:48:07.094095"], ["updated_at", "2016-06-14 20:48:07.094095"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/210" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"210"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 210]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 210]]
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+Started POST "/questions/210/answers" for 127.0.0.1 at 2016-06-14 16:48:07 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"210"}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered questions/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sed odit impedit qui culpa nihil eius quis nihil temporibus."], ["description", "Officiis tamen supellex deripio auris conatus tracto spero. Adipiscor clementia desparatus. Astrum sint reiciendis accusamus deduco doloribus enim contigo. Degenero quo victus repudiandae tepesco claudeo amiculum. Omnis adaugeo aperiam minus copia vis ars. Dedecor aggredior absque."], ["created_at", "2016-06-14 20:53:23.897480"], ["updated_at", "2016-06-14 20:53:23.897480"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Explicabo iste aliquam a dolorem adipisci ut similique aut esse quia."], ["description", "Et infit deleniti aggero dolor depopulo triumphus. Cuppedia decipio vorago sodalitas stabilis adultus sursum aut. Ab concido et benevolentia depereo corporis. Tepidus villa maiores thalassinus sit adeptio. Casus voco absque rerum vallum assumenda chirographum caries. Altus tot succurro. Sit tersus dapifer copia subvenio cum."], ["created_at", "2016-06-14 20:53:23.903307"], ["updated_at", "2016-06-14 20:53:23.903307"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Voluptate non et delectus adipisci omnis dolorum enim hic neque tempore labore."], ["description", "Certe quod conitor adsum cohors cui. Causa sunt tactus vereor aut ait. Optio depraedor vapulus stipes xiphias tres animadverto somniculosus. Et ex velit. Atrocitas iste tollo. Thema verumtamen defendo."], ["created_at", "2016-06-14 20:53:23.906287"], ["updated_at", "2016-06-14 20:53:23.906287"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:53:23 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.html.erb (7.6ms)
+Completed 200 OK in 175ms (Views: 173.8ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Et fugiat quia iure consequatur natus eum impedit modi est."], ["description", "Aperiam delectatio deludo comminor spiculum. Deleo defessus accusantium volva totidem vaco. Videlicet benigne cerno. Versus conor id sperno carbo aliqua. Inventore adsuesco possimus. Venio dolores decumbo optio rem carmen corrupti."], ["created_at", "2016-06-14 20:53:24.102784"], ["updated_at", "2016-06-14 20:53:24.102784"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Nisi inventore doloremque repudiandae voluptates distinctio consequatur ut aut reiciendis aliquam est repellat."], ["description", "Textor vestigium ascisco colligo deripio basium. Adfectus demitto angustus molestiae aggredior cognatus cetera paulatim. Adeo baiulus clarus. Cresco deleniti sufficio aequitas terra venia denique maxime. Et nemo abscido tribuo absorbeo solus ea calcar. Celer vulpes et. Arx substantia cupio amor votum. Vinco color stultus valeo versus sit commodi."], ["created_at", "2016-06-14 20:53:24.105680"], ["updated_at", "2016-06-14 20:53:24.105680"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Corporis temporibus inventore praesentium incidunt quae odio maxime nihil deserunt occaecati est in ratione vitae."], ["description", "Volubilis tamisium vulgaris ceno talis decet non. Contra thema abscido tero pel suasoria defungo torrens. Vomer utrum viriliter dolores nobis bestia. Nobis volutabrum crastinus molestias aegrotatio decerno cupressus convoco. Comptus cubo nihil dedecor alias. Deripio reprehenderit quas. Spargo alioqui coadunatio denique tabgo."], ["created_at", "2016-06-14 20:53:24.108065"], ["updated_at", "2016-06-14 20:53:24.108065"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Aliquid tenetur nulla corrupti eaque laudantium deserunt excepturi quibusdam exercitationem non aut quia."], ["description", "Defendo desino enim tot credo armo verto. Causa aqua apostolus trepide acerbitas curso conscendo. Ager catena animi correptius. Curso votum acquiro. Callide brevis ciminatio claro urbanus templum tui et. Ater virga suffragium nobis arbor repudiandae facilis cursim."], ["created_at", "2016-06-14 20:53:24.116712"], ["updated_at", "2016-06-14 20:53:24.116712"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+Started GET "/questions/217" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"217"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 217]]
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 217]]
+  Rendered questions/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 11.4ms | ActiveRecord: 2.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Aut nobis quaerat quisquam asperiores voluptates animi ducimus quasi blanditiis tempore in rerum deleniti reiciendis."], ["description", "Assumenda terminatio curiositas molestias. Tendo beatus curatio quo pax contigo alo. Decretum decerno tristis virtus pauper. Praesentium asperiores aut cicuta advenio. Cum cilicium cubicularis tego pecunia suasoria tabula vix. Urbs clementia quia coerceo tempora caput ancilla."], ["created_at", "2016-06-14 20:53:24.157510"], ["updated_at", "2016-06-14 20:53:24.157510"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/218" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"218"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 218]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 218]]
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 20:53:24.180414"], ["updated_at", "2016-06-14 20:53:24.180414"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/219
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+Started GET "/questions/219" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"219"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 219]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 219]]
+  Rendered questions/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_flash.html.erb (1.5ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Provident quia dolorem id in eum rerum magnam voluptatem expedita."], ["description", "Ambulo verecundia bellum animi abbas. Bos impedit crudelis. Tempora collum tamdiu rerum convoco ducimus aranea. Tam solio cura dolores. Traho conventus culpa creptio cum statim. Vetus stipes supra qui. Acervus ut victoria vigor."], ["created_at", "2016-06-14 20:53:24.283438"], ["updated_at", "2016-06-14 20:53:24.283438"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/220" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"220"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 220]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 220]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+Started POST "/questions/220/answers" for 127.0.0.1 at 2016-06-14 16:53:24 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"220"}
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Blanditiis velit sed quis aut quia ullam vel a quam architecto sit maxime."], ["description", "Est deinde comptus. Minus sub talus paens articulus tego verbera. Compono eius soluta cum. Sit assumenda pauper. Conatus tepesco paens solio calculus defessus. Articulus desidero vomer."], ["created_at", "2016-06-14 20:53:36.079158"], ["updated_at", "2016-06-14 20:53:36.079158"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/221" for 127.0.0.1 at 2016-06-14 16:53:36 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"221"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 221]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 221]]
+  Rendered questions/show.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_flash.html.erb (9.3ms)
+Completed 200 OK in 200ms (Views: 179.0ms | ActiveRecord: 2.3ms)
+Started POST "/questions/221/answers" for 127.0.0.1 at 2016-06-14 16:53:36 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"221"}
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 221]]
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 187596ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Et nostrum architecto et repudiandae minima et vero amet mollitia voluptates quia numquam."], ["description", "Curvo arto quod praesentium adamo demitto voluptatum. Adeptio venia voluptatum adficio tam utor mollitia. Conduco vultuosus amet abbas non aequus harum a. Causa tabgo arguo voro eum audax depereo voluptatem. Custodia clementia cetera apud torrens nihil armo. Pariatur paulatim aetas absum aeneus cornu autem molestias."], ["created_at", "2016-06-14 20:57:55.950257"], ["updated_at", "2016-06-14 20:57:55.950257"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Consequatur repellendus ratione distinctio similique aut facere sunt et dolorem inventore perferendis veritatis delectus."], ["description", "Caste valetudo clarus non. Spectaculum in ab templum aptus delibero talis commemoro. Sint deprecator aut facilis autus modi vinitor aetas. Absens velociter paens victus crinis supra aperio. Adeo infit aptus. Urbanus abundans acervus terror vae rem tibi tunc. Subvenio textus excepturi atavus."], ["created_at", "2016-06-14 20:57:55.958393"], ["updated_at", "2016-06-14 20:57:55.958393"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sint rerum ut ipsa delectus est non voluptatem minus omnis deserunt est quis."], ["description", "Cogo ducimus concedo. Aut nobis tergo consequatur. Creta stillicidium vito saepe vilicus quidem volva culpa. Velum nihil cohaero omnis deputo sophismata advenio crinis. Centum asperiores utilis totus terreo minima. Quia audentia carbo. Denique vesper coma suspendo cuius inventore."], ["created_at", "2016-06-14 20:57:55.960943"], ["updated_at", "2016-06-14 20:57:55.960943"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:57:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.html.erb (9.9ms)
+Completed 200 OK in 200ms (Views: 198.1ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Eos et corporis itaque rerum maiores dignissimos fugiat ullam voluptas in consequuntur."], ["description", "Dolor statua subvenio communis teneo vesco absconditus. Spero ver cupiditas ancilla aut alii attero acceptus. Comburo doloribus coniuratio vaco. Tricesimus tergo appello cenaculum alioqui rerum. Sed compono aggero apostolus. Cito sono volaticus charisma currus sophismata collum possimus. Uberrime volo magnam. Absconditus terga subvenio et."], ["created_at", "2016-06-14 20:57:56.182806"], ["updated_at", "2016-06-14 20:57:56.182806"]]
+  [1m[36m (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tempora ut quo officia quo aliquid nam eum unde qui neque dignissimos."], ["description", "Aut suasoria appono dignissimos conspergo amita tendo vinco. Absens spoliatio averto pecto exercitationem. Reprehenderit cunctatio videlicet eligendi admoneo cupiditas. Caries doloremque spes totus. Suppono deprimo torrens confido vita. Terebro talio tripudio usitas non natus. Absorbeo tempora stultus tollo antiquus. Solitudo urbanus anser incidunt accedo cruentus conqueror sto."], ["created_at", "2016-06-14 20:57:56.188734"], ["updated_at", "2016-06-14 20:57:56.188734"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Explicabo sunt vero quae commodi voluptas error quod debitis delectus."], ["description", "Dolore arcus aduro debeo admoveo aptus universe adeptio. Conforto pauper tergo concido sulum cetera amicitia varius. Decens demergo debilito despecto aggredior voveo ea absque. Culpa desipio averto aggredior avoco. Vos adulatio officia. Talis contigo distinctio. Cervus facere cariosus demum aspicio vulgaris sto. Coadunatio ager quam patruus averto."], ["created_at", "2016-06-14 20:57:56.191727"], ["updated_at", "2016-06-14 20:57:56.191727"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Earum sequi sed dolorem officiis id quis voluptas natus tempora rerum ducimus."], ["description", "Amita ancilla sono nobis quis repellat delectus. Spoliatio dolor tabesco verto. Venia pax cetera cometes verus conor tergeo. Quis mollitia ut vere anser. Aeneus virgo molestias creta tracto. Tertius stella optio ultio adicio ver fugit. Officia velit libero quis."], ["created_at", "2016-06-14 20:57:56.201250"], ["updated_at", "2016-06-14 20:57:56.201250"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+Started GET "/questions/228" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"228"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 228]]
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 228]]
+  Rendered questions/show.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 14.3ms | ActiveRecord: 2.8ms)
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Aut molestiae eaque tempora molestiae dolorem eveniet et reiciendis rerum repellendus dolor consequatur in architecto."], ["description", "Venio stips defluo sulum. Itaque turba angustus audacia vulgus. Suus audeo suspendo agnosco. Pectus careo nemo astrum tredecim. Sperno civitas conspergo. Conspergo compello arcus videlicet autem ambitus tergum est. Considero sufficio expedita viriliter decimus."], ["created_at", "2016-06-14 20:57:56.259621"], ["updated_at", "2016-06-14 20:57:56.259621"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/229" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"229"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 229]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 229]]
+  Rendered questions/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 20:57:56.289609"], ["updated_at", "2016-06-14 20:57:56.289609"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/230
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+Started GET "/questions/230" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"230"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 230]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 230]]
+  Rendered questions/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (25.8ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Placeat fugiat vel eaque quia nisi quis maxime aut maiores ratione corrupti."], ["description", "Ipsa torrens utrum et officia. Cuppedia claustrum caecus somnus amor angustus virtus. Balbus volubilis comis assumenda. Cornu surculus asporto tactus bos vigilo coruscus talio. Cetera turpis aptus angulus acer vilis voluptatibus. Animadverto vita strues apto tergo cogito comis vero. Delinquo velit verbera stabilis arx tabula ustilo."], ["created_at", "2016-06-14 20:57:56.378682"], ["updated_at", "2016-06-14 20:57:56.378682"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/231" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"231"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 231]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 231]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.7ms)
+Started POST "/questions/231/answers" for 127.0.0.1 at 2016-06-14 16:57:56 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"231"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 231]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 5.7ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Iste consequatur illo eaque consectetur consequatur eveniet aut et tenetur ut fuga."], ["description", "Defetiscor volo repellendus ut comburo quaerat ventosus. Damnatio defleo occaecati. Conculco spiritus illum tenuis corroboro sumptus studio. Ustulo theologus ut arceo patria. Temeritas acerbitas cervus angulus vinum. Itaque studio avaritia corrumpo videlicet curvus sunt. Clarus auctus derideo aqua cernuus socius. Beatus stips ubi."], ["created_at", "2016-06-14 20:59:16.090270"], ["updated_at", "2016-06-14 20:59:16.090270"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/232" for 127.0.0.1 at 2016-06-14 16:59:16 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"232"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 232]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 232]]
+  Rendered questions/show.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_flash.html.erb (10.3ms)
+Completed 200 OK in 246ms (Views: 220.0ms | ActiveRecord: 2.3ms)
+Started POST "/questions/232/answers" for 127.0.0.1 at 2016-06-14 16:59:16 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"232"}
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 232]]
+  [1m[36m (0.7ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 70818ms (Views: 10.5ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Eos sint cum est voluptate consequuntur ipsa et harum aliquam earum minus."], ["description", "Culpa vel arbitro depopulo velut. Ustilo attollo numquam solitudo thema aer pauper. Reiciendis uredo solio cubo arca sumptus cuppedia commodo. Villa pauci enim certo aranea tendo admitto. Adulatio sunt corroboro animadverto tametsi aut dolor vultuosus. Delicate caterva statim."], ["created_at", "2016-06-14 21:00:34.913294"], ["updated_at", "2016-06-14 21:00:34.913294"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/233" for 127.0.0.1 at 2016-06-14 17:00:34 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"233"}
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 233]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 233]]
+  Rendered questions/show.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_flash.html.erb (10.5ms)
+Completed 200 OK in 259ms (Views: 229.4ms | ActiveRecord: 2.5ms)
+Started POST "/questions/233/answers" for 127.0.0.1 at 2016-06-14 17:00:35 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"233"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 233]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "answers" ("description", "question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Stop letting the cats run across the keyboard; put it away as soon as you see a cat."], ["question_id", 233], ["created_at", "2016-06-14 21:00:35.213226"], ["updated_at", "2016-06-14 21:00:35.213226"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 4130ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Necessitatibus porro quod totam dolorem aperiam et vero quia doloribus repellendus sunt debitis."], ["description", "Carcer vilitas apto totus sustineo thermae. Textor cauda subnecto validus voluptatum culpo. Cursus arca vos cunae sopor acervus. Terga aurum cupio. Cubitum ad vulnero aequus vorax. Non cibus benevolentia. Cubo alveus sed. Ambulo ars laudantium inventore sustineo id angustus."], ["created_at", "2016-06-14 21:01:04.641960"], ["updated_at", "2016-06-14 21:01:04.641960"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/234" for 127.0.0.1 at 2016-06-14 17:01:04 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"234"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 234]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 234]]
+  Rendered questions/show.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_flash.html.erb (9.2ms)
+Completed 200 OK in 236ms (Views: 210.1ms | ActiveRecord: 2.3ms)
+Started POST "/questions/234/answers" for 127.0.0.1 at 2016-06-14 17:01:04 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"234"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 234]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("description", "question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Stop letting the cats run across the keyboard; put it away as soon as you see a cat."], ["question_id", 234], ["created_at", "2016-06-14 21:01:04.922598"], ["updated_at", "2016-06-14 21:01:04.922598"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Ea maxime aspernatur et repellendus laborum unde non iure magni exercitationem esse veniam et."], ["description", "Altus maiores confido conicio sumo. Quisquam spoliatio tendo cubo acquiro. Paens caecus sit. Vero hic suadeo dolore cumque. Alias conservo antiquus amicitia attollo demergo quaerat accedo. Comprehendo ater communis virtus umbra."], ["created_at", "2016-06-14 21:01:31.505031"], ["updated_at", "2016-06-14 21:01:31.505031"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/235" for 127.0.0.1 at 2016-06-14 17:01:31 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"235"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 235]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 235]]
+  Rendered questions/show.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_flash.html.erb (9.5ms)
+Completed 200 OK in 232ms (Views: 205.6ms | ActiveRecord: 2.5ms)
+Started POST "/questions/235/answers" for 127.0.0.1 at 2016-06-14 17:01:31 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"235"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 235]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("description", "question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Stop letting the cats run across the keyboard; put it away as soon as you see a cat."], ["question_id", 235], ["created_at", "2016-06-14 21:01:31.778900"], ["updated_at", "2016-06-14 21:01:31.778900"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/questions/235
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+Started GET "/questions/235" for 127.0.0.1 at 2016-06-14 17:01:31 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"235"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 235]]
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 235]]
+  Rendered questions/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Iure vel maiores porro aut dolore at qui consequatur nemo."], ["description", "Supplanto angustus terga arbitro vindico conservo sopor. Ventito defluo conitor amoveo. Incidunt stultus trado utrimque. Defessus est contego turbo illum charisma cras. Defendo aro sit. Spiculum supra curtus cohors fuga. Cuppedia beneficium complectus adultus defungo."], ["created_at", "2016-06-14 21:01:31.795826"], ["updated_at", "2016-06-14 21:01:31.795826"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/questions/236" for 127.0.0.1 at 2016-06-14 17:01:31 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"236"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 236]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 236]]
+  Rendered questions/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+Started POST "/questions/236/answers" for 127.0.0.1 at 2016-06-14 17:01:31 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"This answer is too short."}, "commit"=>"Submit Answer", "question_id"=>"236"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 236]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered questions/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Nisi consequuntur voluptas excepturi ut fugiat reprehenderit nulla quidem repellendus sed sit sapiente consectetur."], ["description", "Delectus civis acer. Articulus aiunt ab velut repudiandae culpa admoneo damno. Civis damno est atque tibi. Spiritus ut amaritudo creptio decens earum. Conspergo vero dens nihil adimpleo. Solium defigo audacia volo possimus textor."], ["created_at", "2016-06-14 21:01:41.342206"], ["updated_at", "2016-06-14 21:01:41.342206"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Exercitationem voluptates atque incidunt nostrum hic ut ut et suscipit est commodi quia."], ["description", "Delibero degero a. Victus tener accedo est fuga trans. Amicitia subseco via tollo. Denuncio vos censura rem. Umquam venio terror. Tametsi sit aperio atavus delibero laudantium."], ["created_at", "2016-06-14 21:01:41.351443"], ["updated_at", "2016-06-14 21:01:41.351443"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Voluptatem quos consequatur officiis sint provident quo rerum qui velit sunt nostrum dolores asperiores dolor."], ["description", "Consequatur ut qui aut est tamquam. Aperio ciminatio thalassinus aliqua. Conscendo dicta clarus tres coepi cum aqua. Repellat volubilis adfero coaegresco aurum vomer. Validus aut adflicto modi deleniti. Solio caveo curiositas laudantium surgo. Antea constans vinitor."], ["created_at", "2016-06-14 21:01:41.354002"], ["updated_at", "2016-06-14 21:01:41.354002"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_flash.html.erb (9.4ms)
+Completed 200 OK in 199ms (Views: 197.9ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Autem nostrum culpa et ut illum error voluptatem quia vel."], ["description", "Dolor deputo cupiditate amissio certe. Aggero bestia voluptatem cernuus territo ulciscor eos. Nulla turpis rerum nihil degero socius cattus. Suscipit illum amicitia vulticulus accedo tamquam. Deinde arcesso aliquid commodi. Conitor amoveo commodi cibus corona ambitus."], ["created_at", "2016-06-14 21:01:41.576961"], ["updated_at", "2016-06-14 21:01:41.576961"]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Nam repellat amet omnis ex itaque nulla at ab quasi esse aut et quis quam."], ["description", "Crux socius acer tantillus. Provident quas tremo. Voluptate velit pecco. Solvo laudantium sonitus adnuo convoco cometes undique. Tempus ager currus sortitus cruentus. Clam asperiores fugit consequuntur atrox vulnus. Accusamus veniam turbo suffoco succurro bibo depulso. Damno sequi verbum caput exercitationem qui."], ["created_at", "2016-06-14 21:01:41.583420"], ["updated_at", "2016-06-14 21:01:41.583420"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Voluptatem voluptates aspernatur in inventore magnam id omnis eaque excepturi."], ["description", "Carpo comburo statua adnuo admoveo patruus. Cometes occaecati creo acer. Culpa tametsi sufficio triduana tersus voluptas aiunt. Corona ascisco certe vilitas qui laborum neque crastinus. Ea trucido adduco suscipit. Tepesco bellicus sint. Depraedor consequatur ocer atqui."], ["created_at", "2016-06-14 21:01:41.586142"], ["updated_at", "2016-06-14 21:01:41.586142"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Voluptas est perspiciatis aut totam hic enim earum sit tempora dolorem itaque."], ["description", "Argumentum demitto colligo. Quia blandior tersus labore basium odio. Tristis saepe vel coniuratio solum iste cupiditas. Bonus centum adipisci aestas ipsa canis. Adipisci culpa curatio. Fugit expedita altus undique aer."], ["created_at", "2016-06-14 21:01:41.598683"], ["updated_at", "2016-06-14 21:01:41.598683"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+Started GET "/questions/243" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"243"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 243]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 243]]
+  Rendered questions/show.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 9.6ms | ActiveRecord: 2.9ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Deleniti accusantium eligendi aliquid et laudantium velit officia sint temporibus sit incidunt voluptatibus assumenda."], ["description", "Vere collum speculum defluo aut aqua. Torrens coadunatio cogo vorax virgo. Caput ultio vinitor audentia sulum. Taedium ascisco adfectus solutio tot ver. Non substantia amplus video desolo synagoga. Administratio porro vicissitudo caries soluta abundans vindico. Aperiam armarium acquiro taceo audentia."], ["created_at", "2016-06-14 21:01:41.649202"], ["updated_at", "2016-06-14 21:01:41.649202"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/244" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"244"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 244]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 244]]
+  Rendered questions/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Why does my computer have all these blinky lights?", "description"=>"I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"}, "commit"=>"Create Question"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Why does my computer have all these blinky lights?"], ["description", "I have no clue what any of this does. Why am I in a boot camp? Why is everything the way it is? I don't know what I'm doing. Help, please, help!!!!!!!"], ["created_at", "2016-06-14 21:01:41.675210"], ["updated_at", "2016-06-14 21:01:41.675210"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/questions/245
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+Started GET "/questions/245" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"245"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 245]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 245]]
+  Rendered questions/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"", "description"=>""}, "commit"=>"Create Question"}
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/questions/new" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started POST "/questions" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "question"=>{"title"=>"Title", "description"=>"Description"}, "commit"=>"Create Question"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered questions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Cupiditate debitis quo ipsum minus aut et voluptas voluptatem a nostrum et et autem."], ["description", "Delinquo ullam aut deprimo derelinquo abbas. Universe auxilium vere non. Harum angustus triduana depromo somnus quo voluptate. Sollers sint dolor careo aut vesco. Blandior cupressus cum. Copia trepide veritatis bellum verto assumenda aegrotatio."], ["created_at", "2016-06-14 21:01:41.767328"], ["updated_at", "2016-06-14 21:01:41.767328"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/246" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"246"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 246]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 246]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+Started POST "/questions/246/answers" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"Stop letting the cats run across the keyboard; put it away as soon as you see a cat."}, "commit"=>"Submit Answer", "question_id"=>"246"}
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 246]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "answers" ("description", "question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Stop letting the cats run across the keyboard; put it away as soon as you see a cat."], ["question_id", 246], ["created_at", "2016-06-14 21:01:41.791797"], ["updated_at", "2016-06-14 21:01:41.791797"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/questions/246
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms)
+Started GET "/questions/246" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"246"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 246]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 246]]
+  Rendered questions/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Qui vitae maxime commodi labore id consequatur ut et porro illum deleniti aperiam qui."], ["description", "Basium conculco curto deripio surculus claudeo appono. Coniuratio benevolentia demergo spiritus teres caterva. Delego amor audio amicitia votum alienus. Apostolus arbor demens. Apparatus repellendus vilicus corporis caveo. Tabula ceno acquiro esse tonsor omnis. Denego avarus curatio sunt sub admiratio angulus spectaculum."], ["created_at", "2016-06-14 21:01:41.809367"], ["updated_at", "2016-06-14 21:01:41.809367"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/questions/247" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"247"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 247]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 247]]
+  Rendered questions/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.8ms)
+Started POST "/questions/247/answers" for 127.0.0.1 at 2016-06-14 17:01:41 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "answer"=>{"description"=>"This answer is too short."}, "commit"=>"Submit Answer", "question_id"=>"247"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 247]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered questions/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_flash.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
