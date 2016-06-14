@@ -1,0 +1,15 @@
+<h1>Add a new question</h1>
+
+<%= form_for(@question) do |f| %>
+  <div class="row">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="row">
+    <%= f.label :description %>
+    <%= f.text_area :description, size: "60x5" %>
+  </div>
+  <div class="row">
+    <%= f.submit %>
+  </div>
+<% end %>

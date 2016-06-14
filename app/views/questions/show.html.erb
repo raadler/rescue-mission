@@ -1,3 +1,21 @@
 <h1><%= @question.title %></h1>
 
 <h3><%= @question.description %></h3>
+
+<% if @answers %>
+  <h4>Answers:</h4>
+  <% @answers.each do |answer| %>
+    <p><%= answer.description %></p>
+  <% end %>
+<% end %>
+
+<h4>Post a new answer:</h4>
+<%= form_for [@question, @answer] do |f| %>
+  <div class="row">
+    <%= f.label :description, "Answer" %>
+    <%= f.text_area :description, size: "60x5" %>
+  </div>
+  <div class="row">
+    <%= f.submit "Submit Answer" %>
+  </div>
+<% end %>

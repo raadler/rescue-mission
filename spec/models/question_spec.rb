@@ -13,4 +13,8 @@ describe Question do
     on(:create)
   end
 
+  it "should have many answers" do
+    should have_many(:answers)
+  end
+
 end
