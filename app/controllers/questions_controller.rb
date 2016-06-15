@@ -24,6 +24,28 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def edit
+    @question = Question.find(params[:id])
+  end
+
+  def update
+    @question = Question.find(params[:id])
+    if @question.update(question_params)
+      flash[:success] = "Question successfully updated!"
+      redirect_to question_path(@question)
+    else
+      flash[:errors] = @question.errors.full_messages.join(', ')
+      render :edit
+    end
+  end
+
+  def destroy
+    @question = Question.find(params[:id])
+    @question.destroy
+    flash[:success] = "Question deleted!"
+    redirect_to questions_path
+  end
+
   private
 
   def question_params

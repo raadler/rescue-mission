@@ -2,6 +2,9 @@
 
 <h3><%= @question.description %></h3>
 
+<p><%= link_to "Edit Question", edit_question_path(@question) %></p>
+<p><%= render 'questions/destroy' %></p>
+
 <% if @answers %>
   <h4>Answers:</h4>
   <% @answers.each do |answer| %>

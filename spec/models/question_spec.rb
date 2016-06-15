@@ -14,7 +14,7 @@ describe Question do
   end
 
   it "should have many answers" do
-    should have_many(:answers)
+    should have_many(:answers).dependent(:destroy)
   end
 
 end
