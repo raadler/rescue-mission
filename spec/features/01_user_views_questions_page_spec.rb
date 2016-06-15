@@ -8,16 +8,16 @@ feature "User views questions page" do
 
   scenario "views questions list" do
     visit '/questions'
-    expect(page).to have_content "#{q1.title}"
-    expect(page).to have_content "#{q2.title}"
-    expect(page).to have_content "#{q3.title}"
+    expect(page).to have_content q1.title
+    expect(page).to have_content q2.title
+    expect(page).to have_content q3.title
   end
 
   scenario "views questions in reverse chronological order" do
     visit '/questions'
-    first_question_position = page.body.index("#{q3.title}")
-    second_question_position = page.body.index("#{q2.title}")
-    third_question_position = page.body.index("#{q1.title}")
+    first_question_position = page.body.index(q3.title)
+    second_question_position = page.body.index(q2.title)
+    third_question_position = page.body.index(q1.title)
 
     expect(first_question_position).to be < second_question_position
     expect(second_question_position).to be < third_question_position
